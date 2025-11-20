@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="assets/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Priscilla Barbosa | Desenvolvimento & Automação</title>
+</head>
+<body class="p-0 m-0"> 
+    <header class="header">
+        <nav class="navbar navbar-expand-xl" aria-label="Navegação principal">
+            <div class="container">
+                <div class="d-flex flex-column">
+                    <a class="navbar-brand header-nav--name d-flex" href="#">
+                        <h1>Priscilla Barbosa <span class="material-symbols-outlined">vpn_key</span></h1>
+                    </a>
+                    <span class="subtitle">Desenvolvimento Web & Automação para Negócios de Serviços</span>
+                    <div class="separador mb-3" aria-hidden="true"></div>
+                </div>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  mx-auto">
+                        <li class="nav-item"><a href="#sobre" class="nav-link px-2 py-1 mx-1 nav--buttons">Sobre</a></li>
+                        <li class="nav-item"><a href="#servicos" class="nav-link px-2 py-1 mx-1 nav--buttons">Serviços</a></li>
+                        <li class="nav-item"><a href="#portifolio" class="nav-link px-2 py-1 mx-1 nav--buttons">Portifólio</a></li>
+                        <li class="nav-item"><a href="#processo" class="nav-link px-2 py-1 mx-1 nav--buttons">Processo</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link px-2 py-1 mx-1 nav--buttons">Contato</a></li>
+                    </ul>
+                    <ul class="header-nav--socialIcons list-unstyled d-flex align-items-center gap-1 mb-0">
+                        <li><a href="https://github.com/PriscillaBarbosa" class="px-1" aria-label="Acessar meu perfil no Github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github nav--socialIcons" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/priscillabarbosa-developer" class="px-1" aria-label="Acessar meu perfil no Linkedin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in nav--socialIcons" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:priscillabarbosa2014@gmail.com" class="px-1" aria-label="Enviar um e-mail"><i class="fa fa-envelope nav--socialIcons" aria-hidden="true"></i></a></li>
+                        <li><button class="px-2 py-1 ml-1 btn-darkMode" id="toggle-dark-mode" aria-label="Alternar tema entre claro e escuro" title="Alternar tema">
+                            <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
+                        </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <section class="hero">
+        <div class="container"> 
+            <div class="row mx-0">
+                <div class="col-12 col-md-8 col-lg-9 d-flex flex-column justify-content-center text-center">
+                    <div class="hero-content-text">
+                        <h2 class="hero-destaque hero-title" id="titulo-datilografado">CÓDIGO E DESIGN</h2>
+                        <p class="hero-chamada">Transformo ideias em experiências digitais elegantes, funcionais e memoráveis.</p> 
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center align-items-center">
+                        <a href="#portifolio" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">VER PORTIFÓLIO</a>
+                        <a href="#contato" class="botao-iniciar mt-3 d-flex justify-content-center align-items-center mb-3">INICIAR PROJETO</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="hero-image d-flex justify-content-center justify-content-md-start align-items-center">
+                        <img src="./assets/img/Developer.png" alt="Foto de Priscilla Barbosa, desenvolvedora full-stack" class="img-self img-fluid"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="row align-items-center g-5"> 
+                <div class="col-12 mt-0">
+                    <div class="separador-sobre my-4"></div> 
+                    <h2 class="section-title" data-aos="fade-right">SOBRE</h2> 
+                    <div class="sobre-infos d-flex justify-content-center"> 
+                        <div class="sobre-content d-flex flex-column justify-content-between">
+                            <div class="d-flex flex-column">
+                                <p class="sobre-destaque">O seu site deve ser intencional, funcional e bonito.</p>
+                                <p class="sobre-texto d-flex justify-content-center align-items-center">Com 2 anos de experiência em desenvolvimento, minha 
+                                    abordagem combina precisão técnica com sensibilidade estética. Cada projeto é tratado como 
+                                    uma peça única, onde cada linha de código contribui para uma experiência coesa e memorável.
+                                </p>
+                                <p class="sobre-texto mb-5">Especializo-me em tecnologias modernas de web, sempre com foco 
+                                    em performance, acessibilidade e design atemporal. Meu trabalho reflete a crença de que o 
+                                    desenvolvimento web é tanto ciência quanto arte.
+                                </p>
+                                                                
+                            <div class="sobre-especialidades d-flex flex-column align-items-center justify-content-center pb-4">
+                                <h4 class="especialidades mb-0">Especialidades</h4>
+                                <ul class="cards-especialidades d-flex flex-wrap justify-content-center p-0 gap-3">
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">HTML-5</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">CSS-3</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">Bootstrap</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">JavaScript E6+</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">Figma</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">UI</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">Responsividade</p>
+                                    </li>
+                                    <li class="card d-flex justify-content-center align-items-center m-1">
+                                        <p class="mb-0">Acessibilidade</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <div class="separador-sobre mb-4"></div>
+                <h2 class="section-title mb-0" data-aos="fade-right">Serviços</h2>
+                <div class="servicos-texto">
+                    <p>Soluções completas que combinam código e design.</p>
+                </div>
+            </div>
+            <div class="row g-4"> <div class="col-12 col-md-6">
+                    <div class="servicos-front mb-2">
+                        <div class="d-flex">
+                            <div class="icon p-2 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-code icon-servicos"></i>
+                            </div>
+                            <h3 class="servicos-subTitle mt-1 mx-2"  data-aos="zoom-in" data-aos-delay="500">Desenvolvimento Front-End</h3>
+                        </div>
+                        <p class="mb-0">Aplicações web modernas construídas com React, TypeScript e as melhores práticas de desenvolvimento.</p>
+                        <ul class="solucoes-lista">
+                            <li><p class="mb-0">Single Page Applications</p></li>
+                            <li><p class="mb-0">Progressive Web Apps</p></li>
+                            <li><p class="mb-0">Component Libraries</p></li>
+                        </ul>
+                    </div>
+                    <div class="design-sistem mb-3"> <div class="d-flex">
+                            <div class="icon p-2 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-palette icon-servicos"></i>
+                            </div>
+                            <h3 class="servicos-subTitle mt-1 mx-2" data-aos="zoom-in" data-aos-delay="700">Design Systems</h3>
+                        </div>
+                        <p class="mb-0">Criação e implementação de sistemas de design escaláveis que garantem consistência visual e eficiência.</p>
+                        <ul class="solucoes-lista">
+                            <li><p class="mb-0">UI Component Libraries</p></li>
+                            <li><p class="mb-0">Style Guidelines</p></li>
+                            <li><p class="mb-0">Documentation</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="responsivo mb-4">
+                        <div class="d-flex">
+                            <div class="icon p-2 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-mobile icon-servicos"></i>
+                            </div>
+                            <h3 class="servicos-subTitle mt-1 mx-2" data-aos="zoom-in" data-aos-delay="900">Design Responsivo</h3>
+                        </div>
+                        <p class="mb-0">Interfaces que funcionam perfeitamente em todos os dispositivos e tamanhos de tela.</p>
+                        <ul class="solucoes-lista">
+                            <li><p class="mb-0">Mobile-First Design</p></li>
+                            <li><p class="mb-0">Cross-Browser</p></li>
+                            <li><p class="mb-0">Accessibility</p></li>
+                        </ul>
+                    </div>
+                    <div class="performance mb-3"> <div class="d-flex">
+                            <div class="icon p-2 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-bolt icon-servicos"></i>
+                            </div>
+                            <h3 class="servicos-subTitle mt-1 mx-2" data-aos="zoom-in" data-aos-delay="1100">Performance & Otimização</h3>
+                        </div>
+                        <p class="mb-0">Auditoria e otimização de performance para experiências digitais rápidas e eficientes.</p>
+                        <ul class="solucoes-lista">
+                            <li><p class="mb-0">Code Optimization</p></li>
+                            <li><p class="mb-0">SEO Enhancement</p></li>
+                            <li><p class="mb-0">Web Vitals</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portifolio" id="portifolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="separador-sobre mb-4"></div>
+                        <div class="row align-items-end">
+                            <div class="col-12 col-md-6">
+                                <h2 class="section-title" data-aos="fade-right">Portifólio</h2>
+                            </div>
+                            <div class="col-12 col-md-6 text-md-end">
+                                <a href="https://vercel.com/priscillabarbosas-projects" class="ver-todos" target="_blank" rel="noopener noreferrer" aria-label="Ver todos os meus projetos">Ver todos os projetos -></a>
+                            </div>
+                        </div>
+
+                        <div class="portifolio-principais d-flex flex-column mt-5"> <div class="row g-5 align-items-center mb-5">
+                                <div class="col-md-7">
+                                    <img src="assets/img/img-1.jpg" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="textos">
+                                        <p class="texto-tag">E-commerce & Brand</p>
+                                        <h3 class="texto-titulo">MAISON BEAUTÉ</h3>
+                                        <p class="texto-frase">Plataforma de e-commerce premium para marca de cosméticos de luxo.</p>
+                                        <div class="container-tecs d-flex flex-wrap"> <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                        </div>
+                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-5 align-items-center mb-5">
+                                <div class="col-md-7 order-md-2"> <img src="assets/img/img-2.png" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
+                                </div>
+                                <div class="col-md-5 order-md-1"> <div class="textos">
+                                        <p class="texto-tag">Portfolio & Showcase</p>
+                                        <h3 class="texto-titulo">STUDIO ARCH</h3>
+                                        <p class="texto-frase">Website minimalista para estúdio de arquitetura contemporânea.</p>
+                                        <div class="container-tecs d-flex flex-wrap">
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                        </div>
+                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 align-items-center mb-5">
+                                <div class="col-md-7">
+                                    <img src="assets/img/img-3.png" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="textos">
+                                        <p class="texto-tag">Mobile & Web App</p>
+                                        <h3 class="texto-titulo">ESSENCE APP</h3>
+                                        <p class="texto-frase">Aplicação de bem-estar com foco em mindfulness e meditação.</p>
+                                        <div class="container-tecs d-flex flex-wrap">
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                        </div>
+                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="processo" id="processo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="separador-sobre mb-4"></div>
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="section-title d-flex justify-content-center align-items-center mb-0" data-aos="fade-right">Processo</h2>
+                            <p class="processo-frase">Uma abordagem meticulosa que garante resultados excepcionais em cada etapa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-4"> <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column"> <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">01</p>
+                            <p class="numero-menor m-0">etapa 01</p>
+                        </div>
+                        <h3 class="processo-titulo">Descoberta</h3>
+                        <p class="processo-texto">Entendimento profundo do seu negócio, objetivos e público-alvo. Análise de mercado e definição estratégica.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column">
+                        <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">02</p>
+                            <p class="numero-menor m-0">etapa 02</p>
+                        </div>
+                        <h3 class="processo-titulo">Conceituação</h3>
+                        <p class="processo-texto">Desenvolvimento de conceitos visuais e arquitetura da informação. Wireframes e protótipos interativos.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column">
+                        <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">03</p>
+                            <p class="numero-menor m-0">etapa 03</p> </div>
+                        <h3 class="processo-titulo">Desenvolvimento</h3>
+                        <p class="processo-texto">Implementação técnica com código limpo e performático. Testes rigorosos e otimizações contínuas.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column">
+                        <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">04</p>
+                            <p class="numero-menor m-0">etapa 04</p>
+                        </div>
+                        <h3 class="processo-titulo">Entrega</h3>
+                        <p class="processo-texto">Deploy e documentação completa. Treinamento e suporte contínuo para garantir o sucesso do projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="row"> 
+                <div class="separador-sobre mb-4 mt-4"></div>
+                    <div class="contato-container">
+                        <div class="contato-chamada">
+                            <h2 class="contato-titulo mb-0 tracking-in-contract section-title" data-aos="fade-right">Vamos Conversar</h2>
+                            <p class="contato-frase">Pronta para transformar sua visão em realidade digital. Entre em contato para discutir seu próximo projeto.</p>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-column">
+                        <p class="contato-email-titulo">Email</p>
+                        <p class="contato-email pb-4">priscillabarbosa@outlook.com</p>
+                        <p class="contato-local-titulo">Localização</p>
+                        <p class="contato-local pb-4">Belo Horizonte, Brasil</p>
+                        <p class="contato-disponibilidade-titulo">Disponibilidade</p>
+                        <p class="contato-disponibilidade pb-4">Aceitando novos projetos</p>
+                        <p class="contato-redesSociais-titulo">Redes Sociais</p>
+                        <div class="redesSociais-icones">
+                            <div class="redesSociais-borda d-flex justify-content-center align-items-center">
+                               <a href="https://www.linkedin.com/in/priscillabarbosa-developer/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="redesSociais-borda d-flex justify-content-center align-items-center">
+                                <a href="https://github.com/PriscillaBarbosa" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="redesSociais-borda d-flex justify-content-center align-items-center">                                
+                                <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <form id="contact-form" class="form">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control bg-transparent" id="form-name" placeholder="Nome" required>
+                            <label for="form-name" class="form-label">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control bg-transparent" id="form-email" placeholder="name@example.com" required>
+                            <label for="form-email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control bg-transparent" id="form-empresa" placeholder="Empresa">
+                            <label for="form-empresa" class="form-label">Empresa</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control bg-transparent" id="form-tipoEmpresa" placeholder="Tipo de empresa">
+                            <label for="form-tipoEmpresa" class="form-label">Tipo de empresa</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control bg-transparent mensagem" placeholder="Escreva sua mensagem aqui" id="sua-mensagem" required></textarea> 
+                            <label for="sua-mensagem" class="label-mensagem">Sua Mensagem</label>
+                        </div>
+                        <button type="submit" class="botao-enviar mt-3 d-flex justify-content-center align-items-center mb-3" id="btn-enviar-contato">Enviar Mensagem</button>
+                        <div class="mt-3" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"> <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="dados-footer d-flex flex-column justify-content-center align-items-center">
+                        <p class="footer-titulo mb-0">Priscilla Barbosa</p>
+                        <p class="footer-texto d-flex justify-content-center align-items-center">Desenvolvedora full-stack</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="navegacao-footer d-flex justify-content-center align-items-center">
+                        <ul class="list-unstyled d-flex gap-2"> 
+                            <li class="mb-1"><a href="#sobre" class="navegacao-link">Sobre</a></li>
+                            <li class="mb-1"><a href="#servicos" class="navegacao-link">Serviços</a></li>
+                            <li class="mb-1"><a href="#portifolio" class="navegacao-link">Portifólio</a></li>
+                            <li class="mb-1"><a href="#processo" class="navegacao-link">Processo</a></li>
+                            <li class="mb-1"><a href="#contato" class="navegacao-link">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-termos d-flex justify-content-center mt-2">
+                        <p class="">&copy; 2025 Priscilla Barbosa. Todos os direitos reservados.</p>
+                        <a href="" class="px-2">| Termos</a>
+                        <a href="" class="px-2">| Privacidade</a>
+                        <a href="" class="px-2">| Cookies</a>
+                    </div>
+                </div>
+                <!--<div class="col-12 col-lg-4 col-md-6">
+                    <div class="newsletter-footer">
+                        <p class="newsletter-title">Newsletter</p>
+                        <p class="newsletter-frase">Insights sobre desenvolvimento e design diretamente no seu email.</p>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control bg-transparent" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Seu e-mail</label>
+                        </div>
+                        <button class="botao-enviar mt-3 d-flex justify-content-center align-items-center">Inscreva-se</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
