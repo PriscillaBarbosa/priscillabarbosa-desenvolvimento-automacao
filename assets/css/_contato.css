@@ -1,0 +1,129 @@
+
+.contato {
+    padding-top: 0;
+    padding-bottom: 4rem;
+    flex-shrink: 0;
+    max-width: 100%; 
+}
+
+.contato-chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.contato-titulo {
+    color: var(--cor-principal);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: -0.1125rem;
+}
+
+.contato-frase {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: .95rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4375rem;
+}
+
+.contato-email-titulo,
+.contato-local-titulo, 
+.contato-disponibilidade-titulo,
+.contato-redesSociais-titulo {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+
+.contato-email,
+.contato-local,
+.contato-disponibilidade, 
+.contato-redesSociais {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.botao-enviar,
+.botao-ver {
+    color: var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.0375rem;
+    text-transform: uppercase;
+    display: flex;
+    width: 12.29588rem;
+    height: 3rem;
+    padding: 1rem 2rem;
+    align-items: center; 
+    justify-content: center; 
+    flex-shrink: 0;
+    background: var(--cor-principal);
+    border: none; 
+}
+
+.botao-enviar:hover,
+.botao-ver:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.redesSociais-icones {
+    display: flex;
+    height: 2.5rem;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+    align-self: stretch;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.redesSociais-icones .redesSociais-borda:hover i {
+    color: var(--cor-separador); 
+    transform: translateY(-2px); 
+    opacity: .8;
+    transition:all 0.3s ease-in-out;
+}
+
+textarea .form-control {
+    height: 150px;
+}
+
+.form-floating .label-mensagem {
+    color: var(--cor-separador);
+}
+
+.redesSociais-icones div i {
+    color: var(--cor-principal);
+}
+
+.form-control {
+    border: 1px solid var(--cor-principal);
+    border-radius: 0;
+    
+}
+
+.form-control:focus {
+    border-color: var(--cor-separador);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(212, 117, 111, .25);
+}

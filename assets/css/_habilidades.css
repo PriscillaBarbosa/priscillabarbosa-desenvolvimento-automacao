@@ -1,0 +1,14 @@
+.habilidades {
+    min-height: 60rem;
+    background: var(--cor-bg);
+}
+
+.habilidades-titulo {
+    color: var(--cor-principal);
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.habilidades-subtitulo {
+    color: var(--cor-principal);
+}
