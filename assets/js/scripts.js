@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             typewriter
-                .typeString('CÓDIGO & DESIGN')
+                .typeString('Desenvolvimento Web')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Desenvolvedora Full-stack com foco em Front-end.')
+                .typeString('Automação Inteligente de Processos')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Apaixonada por User Experience e Design.')
+                .typeString('')
                 .pauseFor(1000)
                 .start();
         }

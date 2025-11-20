@@ -77,13 +77,15 @@
     justify-content: center; 
     flex-shrink: 0;
     background: var(--cor-principal);
-    border: none; 
+    border: none;
+    transition: all 0.25s ease;
+    cursor: pointer; 
 }
 
 .botao-enviar:hover,
 .botao-ver:hover {
     opacity: 0.9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: var(--cor-separador);
 }
 
 .redesSociais-icones {
