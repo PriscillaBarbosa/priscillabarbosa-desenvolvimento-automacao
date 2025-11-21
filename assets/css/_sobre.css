@@ -32,7 +32,8 @@
     letter-spacing: 0.03rem;
 }
 
-.sobre-texto {
+.sobre-texto,
+.sobre-diferenciais {
     color:  var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
@@ -81,7 +82,8 @@
     text-transform: uppercase;
 }
 
-.especialidades {
+.especialidades,
+.subsecao-especialidades {
     padding-top: 3rem;
     padding-bottom:1rem;
     color: var(--cor-principal);
@@ -131,4 +133,33 @@
     border-top: 1px solid;
     border-top-color: var(--cor-separador);
  
+}
+
+.title-diferenciais {
+    font-family:  "Montserrat", sans-serif;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42188rem;
+    letter-spacing: 0.02188rem;
+    color:var(--cor-principal);
+}
+
+.cards-especialidades li {
+    list-style-type: none;
+}
+
+.especialidade-subtitulo {
+    font-size: .5rem ;
+}
+
+.especialidades-tec {
+    color: var(--cor-separador);
+    font-family:  "Montserrat", sans-serif;
+    text-transform: lowercase !important;
+    font-weight: 500;
+}
+
+.especialidades-tec::first-letter {
+    text-transform: capitalize;
 }

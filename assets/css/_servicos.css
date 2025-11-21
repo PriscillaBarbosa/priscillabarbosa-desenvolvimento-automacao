@@ -15,7 +15,7 @@
     letter-spacing: 0.03rem;
 }
 
-.servicos-front {
+.des-web {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,8 @@
     box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86);*/
 }
 
-.icon-servicos {
+.icon-servicos,
+.icon-contato {
     color: var(--cor-separador);
 }
 
@@ -47,7 +48,7 @@
     margin-top: 1.44rem;
     color: var(--cor-principal);
     font-family: "Cormorant Garamond", serif;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 2.25rem; 
@@ -60,10 +61,10 @@
     font-weight: 400
  }
 
-.responsivo p,
+.manutencao p,
 .performance p,
-.design-sistem p,
-.servicos-front p {
+.automacao-inteligente p,
+.des-web p {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
@@ -78,7 +79,7 @@ li::marker {
     color: var(--cor-separador);
 }
 
-.design-sistem {
+.automacao-inteligente {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +99,7 @@ li::marker {
     align-self: stretch;
 }
 
-.responsivo {
+.manutencao {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
