@@ -130,3 +130,7 @@
 .botao-ver {
   text-decoration: none;
 }
+
+.badge img.img-badges {
+  width: 4.5rem;
+}
