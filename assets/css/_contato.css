@@ -129,3 +129,8 @@ textarea .form-control {
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(212, 117, 111, .25);
 }
+
+.btn-whatsapp {
+    color: var(--cor-separador);
+    font-size: 1.5rem;
+}
