@@ -27,7 +27,7 @@ export async function inicializarFormularioContato() {
             statusDiv.className = "alert alert-info";
 
             try {
-                const response = await fetch("https://backend-portifolio-65uf.onrender.com/api/send-email", {
+                const response = await fetch("https://backend-portifoliocomercial.onrender.com", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
