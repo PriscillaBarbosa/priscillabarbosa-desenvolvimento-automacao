@@ -29,22 +29,27 @@ export function inicializarWhatsappBot() {
     floatBtn.addEventListener('click', toggleChat);
     closeBtn.addEventListener('click', toggleChat);
     
-    //4. Lógica do envio de mensagem
+   // 4. Lógica do envio (Versão Anti-CORS / Simple Request)
     function sendToWhatsapp(tipo) {
 
-        // --- Envia para o n8n ---
+        // Prepara os dados
         const dados = {
             tipo: tipo,
-            data: new Date().toISOString() // Data e hora atual
+            data: new Date().toISOString()
         };
 
-        // Dispara o dado para o n8n (sem travar o site)
+        // ENVIAR COMO TEXTO PURO (Isso pula a verificação de CORS do navegador)
         fetch(N8N_WEBHOOK_URL, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            // O segredo está aqui: dizemos que é texto, mas mandamos o JSON convertido em string
+            headers: { "Content-Type": "text/plain;charset=utf-8" }, 
             body: JSON.stringify(dados)
-        }).catch(err => console.error("Erro ao enviar para n8n:", err));
-
+        }).then(() => {
+            console.log("Enviado para n8n com sucesso (modo texto)");
+        }).catch(err => {
+            // Mesmo com erro, não travamos o usuário
+            console.warn("Aviso n8n:", err);
+        });
 
         // --- Lógica original do WhatsApp ---
         const numeroTelefone = "5531988873506";
@@ -60,10 +65,9 @@ export function inicializarWhatsappBot() {
 
         const textoCodificado = encodeURIComponent(texto);
 
-        // Pequeno delay (300ms) para garantir que o navegador enviou o fetch antes de abrir a nova aba
         setTimeout(() => {
             window.open(`https://wa.me/${numeroTelefone}?text=${textoCodificado}`, '_blank');
-            toggleChat(); // Fecha o chat
+            toggleChat(); 
         }, 300);
     }
 
