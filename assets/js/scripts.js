@@ -1,8 +1,10 @@
 import { inicializarDarkMode } from "./modules/darkMode.js";
 import { inicializarFormularioContato } from "./modules/inicializarFormulario.js";
+import { inicializarWhatsappBot } from "./modules/whatsappBot.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     inicializarDarkMode();
+    inicializarWhatsappBot();
     inicializarFormularioContato();
     console.log('DOM carregado, Dark Mode inicializado.');
    

@@ -19,11 +19,11 @@
     <meta property="og:site_name" content="Priscilla Barbosa">
     <meta property="og:locale" content="pt_BR">
     <meta name="robots" content="index, follow">
-    <!-- Calendly badge widget begin -->
+    <!-- Calendly badge widget begin 
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/priscillabarbosa2014/30min', text: 'Agende uma conversa! Clique aqui', color: '#d4756f', textColor: '#ffffff', branding: true }); }</script>
-    <!-- Calendly badge widget end -->
+     Calendly badge widget end -->
     <link rel="icon" type="image/png" href="assets/img/favicon.svg" sizes="32x32">
     <link rel="canonical" href="https://priscillabarbosa.com.br">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,10 +126,8 @@
                     <div class="sobre-infos d-flex justify-content-center"> 
                         <div class="sobre-content d-flex flex-column justify-content-between">
                             <div class="d-flex flex-column">
-                                <p class="sobre-texto d-flex justify-content-start align-items-center mb-1">Não sou somente uma desenvolvedora. Sou uma profissional com + de 15 anos 
-                                    de experiência em gestão de projetos complexos que decidiu unir essa bagagem com tecnologia.</p>
-                                <p class="sobre-texto d-flex justify-content-start align-items-center mb-1">Coordenei centenas de eventos, gerenciei equipes, otimizei processos e resolvi crises. Eu SEI como é a realidade de 
-                                quem toca um negócio: prazos apertados, recursos limitados, clientes exigentes e a necessidade de fazer mais com menos.</p>
+                                <p class="sobre-texto d-flex justify-content-start align-items-center mb-1">Não sou somente uma desenvolvedora. Sou uma profissional com + de 15 anos de experiência em gestão de projetos complexos que decidiu unir essa bagagem com tecnologia.</p>
+                                <p class="sobre-texto d-flex justify-content-start align-items-center mb-1">Coordenei centenas de eventos, gerenciei equipes, otimizei processos e resolvi crises. Eu SEI como é a realidade de quem toca um negócio: prazos apertados, recursos limitados, clientes exigentes e a necessidade de fazer mais com menos.</p>
                                 <p class="sobre-texto d-flex justify-content-start align-items-center">Hoje, uso desenvolvimento web e automação para resolver as mesmas dores que vivi por anos: falta de tempo, processos manuais caóticos e presença digital inadequada.</p>
                                 <div class="d-flex">
                                     <div class="icon p-2 justify-content-start align-items-center d-flex">
@@ -645,10 +643,7 @@
                                 Você sai com insights valiosos, independente de fecharmos projeto.
                             </p>
                             <div class="d-flex">
-                                <p class="contato-frase mb-5 py-3">Ou se preferir, envie uma mensagem via WhatsApp. Clique no ícone:</p>
-                                <a href="https://wa.me/5531988873506?text=Olá! Vi seu site e gostaria de conversar sobre um projeto." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-whatsapp pb-1"></i>
-                                </a>
+                                <p class="contato-frase mb-5 py-3">Ou se preferir, envie uma mensagem via WhatsApp. Clique no ícone.</p>
                             </div>
                         </div>
                     </div>
@@ -715,7 +710,7 @@
                         <button type="submit" class="botao-enviar mt-3 d-flex justify-content-center align-items-center mb-3" id="btn-enviar-contato">Enviar Mensagem</button>
                         <div class="mt-3" id="form-status"></div>
                     </form>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -749,5 +744,31 @@
             </div>
         </div>
     </footer>
+    <!--botão flutuante whatsapp-->
+    <div class="wa-float-button d-flex justify-content-center align-items-center" id="wa-float-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <div class="wa-chat-window" id="wa-window">
+        <div class="wa-header">
+            <div class="wa-profile">
+                <img src="https://github.com/priscillabarbosa.png" alt="Priscilla">
+                <div>
+                    <p class="mb-0">Priscilla Barbosa</p>
+                    <span>Online agora</span>
+                </div>
+            </div>
+            <button type="button" class="wa-close" id="wa-close-btn">&times;</button>
+        </div>
+        <div class="wa-body">
+            <div class="wa-message bot">
+                Olá! Como posso ajudar você hoje?
+            </div>
+            <div class="wa-options">
+                <button type="button" id="opt-recrutador">Sou Recrutador(a)</button>
+                <button type="button" id="opt-projeto">Quero um Projeto</button>
+                <button type="button" id="opt-network">Networking</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
