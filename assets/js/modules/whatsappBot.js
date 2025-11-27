@@ -1,4 +1,4 @@
-const N8N_WEBHOOK_URL = "https://n8n-portfolio.onrender.com/webhook/lead-portfolio";
+const N8N_WEBHOOK_URL = "https://n8n-portfolio-xis4.onrender.com/webhook/lead-portfolio";
 
 export function inicializarWhatsappBot() {
     console.log("Iniciando módulo do Whatsapp...");
