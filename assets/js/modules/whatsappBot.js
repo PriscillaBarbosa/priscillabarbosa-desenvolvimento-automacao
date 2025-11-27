@@ -58,6 +58,8 @@ export function inicializarWhatsappBot() {
            texto = "Olá Priscilla! Vim pelo seu portfólio e gostaria de fazer networking.";
         }
 
+        const textoCodificado = encodeURIComponent(texto);
+
         // Pequeno delay (300ms) para garantir que o navegador enviou o fetch antes de abrir a nova aba
         setTimeout(() => {
             window.open(`https://wa.me/${numeroTelefone}?text=${textoCodificado}`, '_blank');
