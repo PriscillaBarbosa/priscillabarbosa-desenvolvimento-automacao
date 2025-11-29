@@ -1,0 +1,136 @@
+.hero {
+  max-width: 100%;
+  padding-bottom: 0;
+}
+
+.separador,
+.separador-sobre {
+  width: 4rem;
+  height: .06rem;
+  flex-shrink: 0;
+  background: var(--cor-separador);
+  /*opacity:0.3; */
+}
+
+.separador-sobre {
+  margin-bottom: 2rem;
+}
+
+.hero-content-text {
+  width: 100%;
+}
+
+.hero-title {
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+  font-size: clamp(1rem, 2vw, 3rem);
+  font-family: "Cormorant Garamond", serif;
+  color: var(--cor-principal);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: .08rem;
+  text-align: center;
+  animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Mais rápido e suave */
+    
+}
+
+.hero-chamada {
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-size: .95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.85rem;
+  letter-spacing: 0.03rem;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 0.08rem;
+    opacity: 1;
+  }
+}
+
+.img-self {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  animation: fade-in-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.botao-iniciar {
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; 
+  letter-spacing: 0.0375rem;
+  text-transform: uppercase;
+  display: flex;
+  width: 12.29588rem;
+  height: 3rem;
+  padding: 1rem 2rem;
+  align-items: center; 
+  justify-content: center; 
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--cor-principal); 
+  text-decoration: none;
+}
+
+.botao-iniciar:hover {
+  background: var(--cor-separador);
+  color: var(--cor-principal);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botao-ver {
+  text-decoration: none;
+}
+
+.badge img.img-badges {
+  width: 4.5rem;
+}

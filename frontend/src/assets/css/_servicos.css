@@ -1,0 +1,118 @@
+.servicos {
+    padding-top: 0px;
+}
+
+.servicos-texto {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    flex-shrink: 0;
+    margin-top: .5rem !important;
+    margin-bottom: 1rem;
+    font-size: .95rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85rem;
+    letter-spacing: 0.03rem;
+}
+
+.des-web {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.icon {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid var(--cor-separador);
+    -webkit-box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86); 
+    box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86);*/
+}
+
+.icon-servicos,
+.icon-contato {
+    color: var(--cor-separador);
+}
+
+.icon-icon {
+    width: 1.25rem;
+}
+
+.servicos-subTitle {
+    margin-top: 1.44rem;
+    color: var(--cor-principal);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem; 
+    letter-spacing: -0.04688rem;
+}
+
+.servicos-subTitle p {
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400
+ }
+
+.manutencao p,
+.performance p,
+.automacao-inteligente p,
+.des-web p {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42188rem; 
+    letter-spacing: 0.02188rem;
+    padding-bottom: 1rem;
+}
+
+li::marker {
+    color: var(--cor-separador);
+}
+
+.automacao-inteligente {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.performance {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.manutencao {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+ul li p {
+    font-size: .9rem;
+}
+
+.solucoes-lista li p {
+    color: var(--cor-secundaria);
+}

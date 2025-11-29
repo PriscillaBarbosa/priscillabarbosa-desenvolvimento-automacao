@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Priscilla Barbosa | Desenvolvimento Web e Automação para Negócios</title>
+    <meta name="description" content="Desenvolvimento de sites profissionais e automação de processos para produtoras de eventos e profissionais liberais. 15 anos de experiência em gestão, agora somados à tecnologia. Economia de 10-20h/semana garantida.">
+    <meta name="keywords" content="desenvolvimento web belo horizonte, automação de processos, sites para eventos, sites para cerimoniais, sites para formaturas, landing page, consultoria digital, transformação digital, desenvolvedor bh">
+    <meta name="author" content="Priscilla Barbosa">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Priscilla Barbosa | Desenvolvimento Web + Automação para Negócios">
+    <meta property="og:description" content="Tecnologia que liberta seu tempo e profissionaliza seu negócio. Sites + Automações para produtoras de eventos e profissionais liberais. ROI comprovado em 2-4 meses.">
+    <meta property="og:url" content="https://priscillabarbosa.com.br">
+    <meta property="og:image" content="https://priscillabarbosa.com.br/img/Priscilla-Barbosa.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Priscilla Barbosa - Desenvolvimento Web e Automação">
+    <meta property="og:site_name" content="Priscilla Barbosa">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="robots" content="index, follow">
+    <!-- Calendly badge widget begin 
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/priscillabarbosa2014/30min', text: 'Agende uma conversa! Clique aqui', color: '#d4756f', textColor: '#ffffff', branding: true }); }</script>
+     Calendly badge widget end -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.svg" sizes="32x32">
+    <link rel="canonical" href="https://priscillabarbosa.com.br">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="assets/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="p-0 m-0"> 
+    <header class="header">
+        <nav class="navbar navbar-expand-xl" aria-label="Navegação principal">
+            <div class="container">
+                <div class="d-flex flex-column">
+                    <a class="navbar-brand header-nav--name d-flex" href="#">
+                        <h1>Priscilla Barbosa <span class="material-symbols-outlined">vpn_key</span></h1>
+                    </a>
+                    <span class="subtitle">Desenvolvimento Web & Automação Inteligente para Negócios</span>
+                    <div class="separador mb-3" aria-hidden="true"></div>
+                </div>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  mx-auto">
+                        <li class="nav-item"><a href="#sobre" class="nav-link px-2 py-1 mx-1 nav--buttons">Sobre</a></li>
+                        <li class="nav-item"><a href="#servicos" class="nav-link px-2 py-1 mx-1 nav--buttons">Serviços</a></li>
+                        <li class="nav-item"><a href="#portifolio" class="nav-link px-2 py-1 mx-1 nav--buttons">Portifólio</a></li>
+                        <li class="nav-item"><a href="#processo" class="nav-link px-2 py-1 mx-1 nav--buttons">Processo</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link px-2 py-1 mx-1 nav--buttons">Contato</a></li>
+                    </ul>
+                    <ul class="header-nav--socialIcons list-unstyled d-flex align-items-center gap-1 mb-0">
+                        <li><a href="https://github.com/PriscillaBarbosa" class="px-1" aria-label="Acessar meu perfil no Github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github nav--socialIcons" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/priscillabarbosa-developer" class="px-1" aria-label="Acessar meu perfil no Linkedin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in nav--socialIcons" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:priscillabarbosa2014@gmail.com" class="px-1" aria-label="Enviar um e-mail"><i class="fa fa-envelope nav--socialIcons" aria-hidden="true"></i></a></li>
+                        <li><button class="px-2 py-1 ml-1 btn-darkMode" id="toggle-dark-mode" aria-label="Alternar tema entre claro e escuro" title="Alternar tema">
+                            <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
+                        </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <section class="hero">
+        <div class="container"> 
+            <!--<div class="row mx-0">
+                <div class="col-12">
+                    <div class="trust-badges d-flex justify-content-end align-items-center gap-1">
+                        <span class="badge p-0">
+                            <img src="./assets/img/trust-badges1.png" alt="" class="img-badges">
+                        </span>
+                        <span class="badge p-0">
+                            <img src="./assets/img/trust-badges2.png" alt="" class="img-badges">
+                        </span>
+                        <span class="badge p-0">
+                            <img src="./assets/img/trust-badges3.png" alt="" class="img-badges">
+                        </span>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row mx-0">
+                <div class="col-12 col-md-8 col-lg-9 d-flex flex-column justify-content-center text-center">
+                    <div class="hero-content-text">
+                        <h2 class="hero-destaque hero-title" id="titulo-datilografado"></h2>
+                        <p class="hero-chamada">Economia de 10-20h por semana + Presença digital que vende 24/7</p>
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center align-items-center">
+                        <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">ENTRAR EM CONTATO</a>
+                        <!--<a href="#" class="botao-iniciar mt-3 d-flex justify-content-center align-items-center mb-3">VER SERVIÇOS E VALORES</a>-->
+                    </div>
+                    <p class="hero-chamada mb-0">Desenvolvimento de sites profissionais e automação de processos para você focar no que realmente importa:</p>
+                    <p class="hero-chamada mb-0">seus clientes.</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="hero-image d-flex justify-content-center justify-content-md-start align-items-center">
+                        <img src="./assets/img/foto2.png" alt="Foto de Priscilla Barbosa, desenvolvedora front-end" class="img-self img-fluid"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="row align-items-center g-5"> 
+                <div class="col-12 mt-0">
+                    <div class="separador-sobre my-4"></div> 
+                    <h2 class="section-title" data-aos="fade-right">Sobre</h2> 
+                    <div class="sobre-infos d-flex justify-content-center"> 
+                        <div class="sobre-content d-flex flex-column justify-content-between">
+                            <div class="d-flex flex-column">
+                                <p class="sobre-texto d-flex justify-content-start align-items-center mb-1">Não sou somente uma desenvolvedora. Sou uma profissional com + de 15 anos de experiência em gestão de projetos complexos que decidiu unir essa bagagem com tecnologia.</p>
+                                <p class="sobre-texto d-flex justify-content-start align-items-center mb-1">Coordenei centenas de eventos, gerenciei equipes, otimizei processos e resolvi crises. Eu SEI como é a realidade de quem toca um negócio: prazos apertados, recursos limitados, clientes exigentes e a necessidade de fazer mais com menos.</p>
+                                <p class="sobre-texto d-flex justify-content-start align-items-center">Hoje, uso desenvolvimento web e automação para resolver as mesmas dores que vivi por anos: falta de tempo, processos manuais caóticos e presença digital inadequada.</p>
+                                <div class="d-flex">
+                                    <div class="icon p-2 justify-content-start align-items-center d-flex">
+                                        <i class="fa-regular fa-star icon-servicos"></i>
+                                    </div>
+                                    <h4 class="servicos-subTitle pt-2 mt-0">Diferenciais</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <p class="title-diferenciais"><strong>Entendo de negócio</strong>, não apenas de código.
+                                        Falo a linguagem de gestão, não só de tecnologia.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="title-diferenciais"><strong>Soluções práticas</strong>, não apenas bonitas.
+                                        Cada funcionalidade existe para resolver um problema real.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="title-diferenciais"><strong>ROI comprovado.</strong>
+                                        Meus clientes economizam 10-20h/semana e veem retorno em 2-4 meses.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="title-diferenciais">
+                                            <strong>Especialização no seu setor.</strong>
+                                            Conheço profundamente as dores de eventos e serviços profissionais.
+                                        </p>
+                                    </li>
+                                </ul>                         
+                            <div class="sobre-especialidades d-flex flex-column align-items-center justify-content-center pb-4">
+                                <div class="d-flex justify-content-start mt-3">
+                                    <div class="icon p-2 justify-content-start align-items-center d-flex">
+                                        <i class="fa-regular fa-star icon-servicos"></i>
+                                    </div>
+                                    <h4 class="servicos-subTitle pt-2 mt-0">Minhas Habilidades</h4>
+                                </div>
+                                <div class="subsecao-especialidades pt-1 pb-0">
+                                    <p class="d-flex justify-content-center my-2">DESENVOLVIMENTO WEB</p>
+                                    <ul class="cards-especialidades d-flex flex-wrap justify-content-center p-0 gap-3">
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">HTML5 & CSS3</p>
+                                            </div>
+                                             <p class="especialidades-tec">Código semântico e moderno</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Bootstrap 5</p>
+                                            </div>
+                                             <p class="especialidades-tec">Framework manutencao</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">JavaScript ES6+</p>
+                                            </div>
+                                             <p class="especialidades-tec">Interatividade e performance</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="cards-especialidades d-flex flex-wrap justify-content-center p-0 gap-3">
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Figma & Design</p>
+                                            </div>
+                                             <p class="especialidades-tec">Design Systems</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Responsividade</p>
+                                            </div>
+                                             <p class="especialidades-tec">Perfeito em todos os dispositivos</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Acessibilidade</p>
+                                            </div>
+                                             <p class="especialidades-tec">Sites para todos </p>
+                                        </li>
+                                    </ul>   
+                                       
+                                       
+                                    
+                                </div>
+                                <div class="subsecao-especialidades pt-1">
+                                    <p class="d-flex justify-content-center my-2">AUTOMAÇÃO & PROCESSOS</p>
+                                    <ul class="cards-especialidades d-flex flex-wrap justify-content-center p-0 gap-3">
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Zapier & Make</p>
+                                            </div>
+                                            <p class="especialidades-tec">Automações inteligentes</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Integrações</p>
+                                            </div>
+                                            <p class="especialidades-tec">Conectando suas ferramentas</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">APIs & Webhooks</p>
+                                            </div>
+                                            <p class="especialidades-tec">Sistemas que conversam</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="cards-especialidades d-flex flex-wrap justify-content-center p-0 gap-3">
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">WhatsApp Business</p>
+                                            </div>
+                                            <p class="especialidades-tec">Comunicação automatizada</p>
+                                        </li>
+                                        <li>
+                                            <div class="card d-flex justify-content-center align-items-center m-1">
+                                                <p class="mb-0">Google Workspace</p>
+                                            </div>
+                                            <p class="especialidades-tec">Otimização de fluxos</p>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <div class="separador-sobre mb-4"></div>
+                <h2 class="section-title mb-5" data-aos="fade-right">Como Posso Ajudar Seu Negócio</h2>
+            </div>
+            <div class="row"> 
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="des-web mb-2">
+                        <div class="icon p-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-code icon-servicos"></i>
+                            <h3 class="servicos-subTitle mt-1 mx-2"  data-aos="zoom-in" data-aos-delay="400">Desenvolvimento Web Profissional</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="mb-0">Sites e landing pages que vendem enquanto você dorme.</p>
+                            <ul class="solucoes-lista">
+                                <li><p class="mb-0">Design moderno e manutencao</p></li>
+                                <li><p class="mb-0">Otimizado para conversão</p></li>
+                                <li><p class="mb-0">SEO e performance garantidos</p></li>
+                            </ul>
+                            <p class="mb-0">Ideal para:</p>
+                            <p class="mb-0">Produtoras, Cerimoniais, fotografos, que precisam de presença digital profissional e profissionais liberais que querem atrair clientes online.</p>
+                            <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="automacao-inteligente mb-3"> 
+                        <div class="icon p-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-palette icon-servicos"></i>
+                            <h3 class="servicos-subTitle mt-1 mx-2" data-aos="zoom-in" data-aos-delay="600">Automação Inteligente</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="mb-0">Pare de perder tempo com tarefas manuais repetitivas.</p>
+                            <ul class="solucoes-lista">
+                                <li><p class="mb-0">Automação de emails e comunicação</p></li>
+                                <li><p class="mb-0">Integração entre ferramentas</p></li>
+                                <li><p class="mb-0">Organização de dados e clientes</p></li>
+                                <li><p class="mb-0"> Follow-ups automáticos</p></li>
+                                <li><p class="mb-0"> Relatórios que se geram sozinhos</p></li>
+                            </ul>
+                            <p class="mb-0">Ideal para:</p>
+                            <p class="mb-0">Empresas que gastam horas em planilhas, WhatsApp desorganizado e processos manuais que drenam energia.</p>
+                            <p class="mb-0">Economia típica: 10-20h/semana.</p>
+                            <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">Saiba Mais</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="manutencao mb-4">
+                        <div class="icon p-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-mobile icon-servicos"></i>
+                            <h3 class="servicos-subTitle mt-1 mx-2" data-aos="zoom-in" data-aos-delay="700">Manutenção e Suporte Contínuo</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="mb-0">Interfaces que funcionam perfeitamente em todos os dispositivos e tamanhos de tela.</p>
+                            <ul class="solucoes-lista">
+                                <li><p class="mb-0"> Atualizações mensais</p></li>
+                                <li><p class="mb-0">Backup e segurança</p></li>
+                                <li><p class="mb-0">Ajustes e melhorias</p></li>
+                                <li><p class="mb-0">Suporte prioritário</p></li>
+                                <li><p class="mb-0">Novas funcionalidades</p></li>
+                            </ul>
+                            <p class="mb-0">Ideal para:</p>
+                            <p class="mb-0">Clientes que querem paz de espírito e evolução contínua.</p>
+                            <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="para-voce">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="separador-sobre mb-4"></div>
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-12">
+                        <h2 class="section-title mb- pb-3" data-aos="fade-right">Este trabalho É para você se...</h2>
+                        <ul>
+                            <li class="cliente-perfil my-3">Você é do setor de eventos ou profissional liberal.</li>
+                            <li class="cliente-perfil my-3">Seu site está desatualizado (ou nem tem um).</li>
+                            <li class="cliente-perfil my-3">Gasta horas em tarefas manuais que poderiam ser automatizadas.</li>
+                            <li class="cliente-perfil my-3">Quer crescer mas está travada na operação.</li>
+                            <li class="cliente-perfil my-3">Valoriza qualidade e resultados, não apenas preço baixo.</li>
+                            <li class="cliente-perfil my-3">Está disposta ou disposto a investir em seu negócio.</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="section-title mb- pb-3" data-aos="fade-right">Este trabalho NÃO é para você se...</h2>
+                        <ul>
+                            <li class="cliente-perfil my-3">Procura a opção mais barata do mercado.</li>
+                            <li class="cliente-perfil my-3">Quer resultado milagroso sem investir adequadamente.</li>
+                            <li class="cliente-perfil my-3">Não está aberta a implementar mudanças.</li>
+                            <li class="cliente-perfil my-3">Precisa de entrega "pra ontem" sem planejamento.</li>
+                            <li class="cliente-perfil my-3">Quer apenas código, sem estratégia.</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center">
+                        <i class="fa-solid fa-handshake icon-contato"></i>
+                        <p class="cliente-perfil">Trabalho com quem valoriza parceria de longo prazo, não apenas transações pontuais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portifolio pb-2" id="portifolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="separador-sobre mb-4"></div>
+                        <div class="row align-items-end">
+                            <div class="col-12 col-md-6">
+                                <h2 class="section-title" data-aos="fade-right">Projetos que posso criar para Você</h2>
+                            </div>
+                            <div class="col-12 col-md-6 text-md-end">
+                                <a href="https://vercel.com/priscillabarbosas-projects" class="ver-todos" target="_blank" rel="noopener noreferrer" aria-label="Ver todos os meus projetos">Ver todos os projetos -></a>
+                            </div>
+                        </div>
+
+                        <div class="portifolio-principais d-flex flex-column mt-5"> <div class="row g-5 align-items-center mb-5">
+                                <div class="col-md-7">
+                                    <img src="assets/img/img-1.jpg" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="textos">
+                                        <p class="texto-tag">Site para Produtora de Eventos</p>
+                                        <h3 class="texto-titulo">MAISON BEAUTÉ</h3>
+                                        <p class="texto-frase">Landing page + sistema de gestão de clientes integrado. Seus clientes agendam, você gerencia, tudo automatizado.</p>
+                                        <div class="container-tecs d-flex flex-wrap"> <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                        </div>
+                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                        <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">QUERO ISSO PARA O MEU NEGÓCIO!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-5 align-items-center mb-5">
+                                <div class="col-md-7 order-md-2"> <img src="assets/img/img-2.png" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
+                                </div>
+                                <div class="col-md-5 order-md-1"> <div class="textos">
+                                        <p class="texto-tag">Automação para Profissional Liberal</p>
+                                        <h3 class="texto-titulo">STUDIO ARCH</h3>
+                                        <p class="texto-frase">Conecte suas ferramentas, elimine tarefas manuais. Formulário → CRM → Email → Agendamento. Tudo sozinho.</p>
+                                        <div class="container-tecs d-flex flex-wrap">
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                        </div>
+                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                        <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">QUERO ISSO PARA O MEU NEGÓCIO!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 align-items-center mb-5">
+                                <div class="col-md-7">
+                                    <img src="assets/img/img-3.png" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="textos">
+                                        <p class="texto-tag">Sistema para Gestão de Formaturas</p>
+                                        <h3 class="texto-titulo">ESSENCE APP</h3>
+                                        <p class="texto-frase">Controle de alunos, pagamentos, fornecedores em um só lugar. Menos planilhas, mais resultados.</p>
+                                        <div class="container-tecs d-flex flex-wrap">
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                            <div><p class="tec mb-0 me-2">JavaScript</p></div>
+                                        </div>
+                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                        <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">QUERO ISSO PARA O MEU NEGÓCIO!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="processo" id="processo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="separador-sobre mb-4"></div>
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="section-title d-flex justify-content-center align-items-center mb-0" data-aos="fade-right">Como trabalhamos juntos</h2>
+                            <p class="processo-frase">Do Primeiro Contato ao Resultado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4"> <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column"> <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">01</p>
+                            <p class="numero-menor m-0">etapa 01</p>
+                        </div>
+                        <h3 class="processo-titulo">Conversa e Diagnóstico</h3>
+                        <p class="processo-texto">Entendimento profundo do seu negócio, desafios e objetivos. Mapeio oportunidades de automação e melhoria digital. 
+                            Você sai com insights valiosos, mesmo que não feche projeto.
+                        </p>
+                        <p class="processo-texto">RESULTADO: Clareza sobre o que seu negócio precisa.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column">
+                        <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">02</p>
+                            <p class="numero-menor m-0">etapa 02</p>
+                        </div>
+                        <h3 class="processo-titulo">Proposta e Planejamento</h3>
+                        <p class="processo-texto">Proposta detalhada com escopo, prazo e investimento transparentes. Definição de prioridades e expectativas alinhadas.
+                            Sem letras miúdas, sem surpresas.
+                        </p>
+                        <p class="processo-texto">RESULTADO: Contrato claro e roadmap do projeto.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column">
+                        <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">03</p>
+                            <p class="numero-menor m-0">etapa 03</p> </div>
+                        <h3 class="processo-titulo">Desenvolvimento e Implementação</h3>
+                        <p class="processo-texto">Código limpo, design profissional, automações funcionando. Reuniões semanais de alinhamento (você acompanha tudo).
+                           Testes rigorosos antes de qualquer entrega.
+                        </p>
+                        <p class="processo-texto">RESULTADO: Solução funcionando perfeitamente.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="processo-card d-flex flex-column">
+                        <div class="processo-numeros d-flex align-items-center">
+                            <p class="numero-maior">04</p>
+                            <p class="numero-menor m-0">etapa 04</p>
+                        </div>
+                        <h3 class="processo-titulo">Entrega, Treinamento e Suporte</h3>
+                        <p class="processo-texto">Deploy em ambiente de produção.
+                            Treinamento completo da sua equipe (presencial ou remoto).
+                            Documentação clara e suporte incluso por [30/60] dias.
+                        </p>
+                        <p class="processo-texto">RESULTADO: Você dominando a solução, sem dependência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="separador-sobre mb-4"></div>
+                    <h2 class="section-title" data-aos="fade-right">Perguntas frequentes</h2>
+                        <div class="accordion" id="faq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Quanto tempo leva um projeto?
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Projetos menores (sites (landing pages) ou automações básicas): 3-4 semanas.</li>
+                                        <li>Projetos com escopo maior: 8-10 semanas.</li>
+                                    </ul>
+                                    <p class="mb-1">Sempre com prazo claro e definido na proposta.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Posso parcelar o investimento?
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                   Sim! Aceito parcelamento sem juros:
+                                  <ul>
+                                    <li>Pix/transferência: até 3x</li>
+                                    <li>Cartão de crédito: até 6x</li>
+                                  </ul>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Atende todo Brasil?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sim! Atendimento presencial em Belo Horizonte e região ou 100% remoto via videochamadas.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    E se eu não souber mexer depois?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Treino você e sua equipe!
+                                    <ul>
+                                        <li>Deixo documentação clara e vídeos explicativos.</li>
+                                        <li>Suporte incluso por 30-60 dias (dependendo do pacote).</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Preciso entender de tecnologia?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Não! Meu trabalho é justamente traduzir "tecniquês" 
+                                    para linguagem humana. Você foca no seu negócio,
+                                    eu cuido da parte técnica.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Oferece garantia?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sim! Garantia de satisfação:
+                                    <ul>
+                                        <li>Se não atingir o resultado prometido, reembolso</li>
+                                        <li>Suporte incluso no período acordado</li>
+                                        <li>Código limpo e documentado</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Por que você e não outros desenvolvedores de software?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Não sou "somente" desenvolvedora de software. Tenho mais de 10 anos gerenciando projetos complexos.
+                                    Entendo de negócio, prazos, ROI, gestão. Entrego SOLUÇÃO, não apenas código bonito.
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <p class="mb-0 mt-4 faq-duvida">Não encontrou sua dúvida?</p>
+                            <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">TIRAR DÚVIDA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="row"> 
+                <div class="separador-sobre mb-4 mt-4"></div>
+                    <div class="contato-container">
+                        <div class="contato-chamada">
+                            <h2 class="contato-titulo mb-0 tracking-in-contract section-title" data-aos="fade-right">Vamos conversar?</h2> 
+                            <p class="contato-frase mb-1">Agende uma conversa gratuita de 30 minutos.
+                                Vou mapear suas maiores oportunidades de economia de tempo e 
+                                melhoria digital. Sem compromisso, sem enrolação.
+                                Você sai com insights valiosos, independente de fecharmos projeto.
+                            </p>
+                            <div class="d-flex">
+                                <p class="contato-frase mb-5 py-3">Ou se preferir, envie uma mensagem via WhatsApp. Clique no ícone.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex gap-2">
+                                <i class="fa-regular fa-envelope icon-contato"></i>
+                                <p class="contato-email-titulo">Email</p>
+                            </div>
+                            <p class="contato-email mb-0">priscillabarbosa@outlook.com</p>
+                            <p class="contato-email pb-4"><i><small>Respondo em até 24 horas</small></i></p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex gap-2">
+                                <i class="fa-solid fa-location-dot icon-contato"></i>
+                                <p class="contato-local-titulo">Localização</p>
+                            </div>
+                            <p class="contato-local pb-4">Belo Horizonte, Brasil</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex gap-2">
+                                <i class="fa-solid fa-check icon-contato"></i>
+                                <p class="contato-disponibilidade-titulo">Disponibilidade</p>
+                            </div>
+                        </div>
+                        <p class="contato-disponibilidade pb-4">Aceitando novos projetos</p>
+                        <p class="contato-redesSociais-titulo">Redes Sociais</p>
+                        <div class="redesSociais-icones">
+                            <div class="redesSociais-borda d-flex justify-content-center align-items-center">
+                               <a href="https://www.linkedin.com/in/priscillabarbosa-developer/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="redesSociais-borda d-flex justify-content-center align-items-center">
+                                <a href="https://github.com/PriscillaBarbosa" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="redesSociais-borda d-flex justify-content-center align-items-center">                                
+                                <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <form id="contact-form" class="form">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control bg-transparent" id="form-name" placeholder="Nome" required>
+                            <label for="form-name" class="form-label">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control bg-transparent" id="form-email" placeholder="name@example.com" required>
+                            <label for="form-email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control bg-transparent" id="form-empresa" placeholder="Empresa">
+                            <label for="form-empresa" class="form-label">Empresa</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control bg-transparent" id="form-tipoEmpresa" placeholder="Tipo de empresa">
+                            <label for="form-tipoEmpresa" class="form-label">Tipo de empresa</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control bg-transparent mensagem" placeholder="Escreva sua mensagem aqui" id="sua-mensagem" required></textarea> 
+                            <label for="sua-mensagem" class="label-mensagem">Sua Mensagem</label>
+                        </div>
+                        <button type="submit" class="botao-enviar mt-3 d-flex justify-content-center align-items-center mb-3" id="btn-enviar-contato">Enviar Mensagem</button>
+                        <div class="mt-3" id="form-status"></div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <footer class="footer"> <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="dados-footer d-flex flex-column justify-content-center align-items-center">
+                        <p class="footer-titulo mb-0">Priscilla Barbosa</p>
+                        <p class="footer-texto d-flex justify-content-center align-items-center">Desenvolvimento Web & Automação Inteligente </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="navegacao-footer d-flex justify-content-center align-items-center">
+                        <ul class="list-unstyled d-flex gap-2"> 
+                            <li class="mb-1"><a href="#sobre" class="navegacao-link">Sobre</a></li>
+                            <li class="mb-1"><a href="#servicos" class="navegacao-link">Serviços</a></li>
+                            <li class="mb-1"><a href="#portifolio" class="navegacao-link">Portifólio</a></li>
+                            <li class="mb-1"><a href="#processo" class="navegacao-link">Processo</a></li>
+                            <li class="mb-1"><a href="#contato" class="navegacao-link">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-termos d-flex justify-content-center mt-2">
+                        <p class="">&copy; 2025 Priscilla Barbosa. Todos os direitos reservados.</p>
+                        <a href="" class="px-2">| Termos</a>
+                        <a href="" class="px-2">| Privacidade</a>
+                        <a href="" class="px-2">| Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--botão flutuante whatsapp-->
+    <div class="wa-float-button d-flex justify-content-center align-items-center" id="wa-float-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <div class="wa-chat-window" id="wa-window">
+        <div class="wa-header">
+            <div class="wa-profile">
+                <img src="https://github.com/priscillabarbosa.png" alt="Priscilla">
+                <div>
+                    <p class="mb-0">Priscilla Barbosa</p>
+                    <span>Online agora</span>
+                </div>
+            </div>
+            <button type="button" class="wa-close" id="wa-close-btn">&times;</button>
+        </div>
+        <div class="wa-body">
+            <div class="wa-message bot">
+                Olá! Como posso ajudar você hoje?
+            </div>
+            <div class="wa-options">
+                <button type="button" id="opt-recrutador">Sou Recrutador(a)</button>
+                <button type="button" id="opt-projeto">Quero um Projeto</button>
+                <button type="button" id="opt-network">Networking</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
