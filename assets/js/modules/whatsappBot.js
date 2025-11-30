@@ -75,5 +75,4 @@ export function inicializarWhatsappBot() {
     btnRecrutador.addEventListener('click', () => sendToWhatsapp('recrutador'));
     btnProjeto.addEventListener('click', () => sendToWhatsapp('projeto'));
     btnNetwork.addEventListener('click', () => sendToWhatsapp('network'));
-
 }
