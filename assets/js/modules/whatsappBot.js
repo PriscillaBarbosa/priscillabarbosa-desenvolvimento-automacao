@@ -1,4 +1,4 @@
-//const N8N_WEBHOOK_URL = "https://n8n-portfolio-xis4.onrender.com/webhook/lead-portfolio";
+const N8N_WEBHOOK_URL = "https://n8n-portfolio-xis4.onrender.com/webhook/lead-portfolio";
 
 export function inicializarWhatsappBot() {
     console.log("Iniciando módulo do Whatsapp...");
@@ -39,7 +39,7 @@ export function inicializarWhatsappBot() {
         };
 
         // ENVIAR COMO TEXTO PURO (Isso pula a verificação de CORS do navegador)
-       /* fetch(N8N_WEBHOOK_URL, {
+        fetch(N8N_WEBHOOK_URL, {
             method: "POST",
             // O segredo está aqui: dizemos que é texto, mas mandamos o JSON convertido em string
             headers: { "Content-Type": "text/plain;charset=utf-8" }, 
@@ -49,7 +49,7 @@ export function inicializarWhatsappBot() {
         }).catch(err => {
             // Mesmo com erro, não travamos o usuário
             console.warn("Aviso n8n:", err);
-        }); */
+        });
 
         // --- Lógica original do WhatsApp ---
         const numeroTelefone = "5531988873506";
