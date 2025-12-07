@@ -1,10 +1,9 @@
-// 1. AJUSTE AQUI: Coloquei a URL exata que está na sua tela do n8n (Localhost)
-const N8N_WEBHOOK_URL = "http://localhost:5678/webhook-test/whatsapp";
+//const N8N_WEBHOOK_URL = "https://n8n-portfolio-xis4.onrender.com/webhook/lead-portfolio";
 
 export function inicializarWhatsappBot() {
     console.log("Iniciando módulo do Whatsapp...");
 
-    // Seleciona os elementos pelo ID
+    // 1. Seleciona os elementos pelo ID
     const floatBtn = document.getElementById('wa-float-btn');
     const closeBtn = document.getElementById('wa-close-btn');
     const chatWindow = document.getElementById('wa-window');
@@ -17,7 +16,7 @@ export function inicializarWhatsappBot() {
     // Se os elementos não existirem na página, para a execução (Segurança)
     if (!floatBtn) return;
 
-    // Função para Abrir/Fechar o Chat
+    // 2. Função para Abrir/Fechar o Chat
     function toggleChat() {
         if (chatWindow.style.display === 'block') {
             chatWindow.style.display = 'none';
@@ -26,11 +25,11 @@ export function inicializarWhatsappBot() {
         }
     }
 
-    // Adiciona os ouvintes de evento (Listeners)
+    // 3. Adiciona os ouvintes de evento (Listeners)
     floatBtn.addEventListener('click', toggleChat);
     closeBtn.addEventListener('click', toggleChat);
     
-    // Lógica do envio
+   // 4. Lógica do envio (Versão Anti-CORS / Simple Request)
     function sendToWhatsapp(tipo) {
 
         // Prepara os dados
@@ -39,17 +38,18 @@ export function inicializarWhatsappBot() {
             data: new Date().toISOString()
         };
 
-        
-        // Usamos "text/plain" para evitar bloqueios de CORS no Localhost
-        fetch(N8N_WEBHOOK_URL, {
+        // ENVIAR COMO TEXTO PURO (Isso pula a verificação de CORS do navegador)
+      /*  fetch(N8N_WEBHOOK_URL, {
             method: "POST",
+            // O segredo está aqui: dizemos que é texto, mas mandamos o JSON convertido em string
             headers: { "Content-Type": "text/plain;charset=utf-8" }, 
             body: JSON.stringify(dados)
         }).then(() => {
             console.log("Enviado para n8n com sucesso (modo texto)");
         }).catch(err => {
-            console.warn("Aviso n8n (pode ser ignorado se o whatsapp abrir):", err);
-        });
+            // Mesmo com erro, não travamos o usuário
+            console.warn("Aviso n8n:", err);
+        });*/
 
         // --- Lógica original do WhatsApp ---
         const numeroTelefone = "5531989882748";
@@ -71,7 +71,7 @@ export function inicializarWhatsappBot() {
         }, 300);
     }
 
-    // Vincula cada função ao botão de envio
+    //5. Vincula cada função ao botão de envio
     btnRecrutador.addEventListener('click', () => sendToWhatsapp('recrutador'));
     btnProjeto.addEventListener('click', () => sendToWhatsapp('projeto'));
     btnNetwork.addEventListener('click', () => sendToWhatsapp('network'));
