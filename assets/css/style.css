@@ -20,18 +20,15 @@
     box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-}
 
 @font-face {
   src: url("/assets/fonts/CinzelDecorative-Regular.ttf") format("truetype");
   font-family: "Cinzel";
 }
 
-body {
+html, body {
   transition: background-color 0.3s ease, color 0.3s ease;
-  min-width: 100vh;
+  width: 100%;
   overflow-x: hidden;
   background: var(--cor-terciaria);
 }
