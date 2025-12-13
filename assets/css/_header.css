@@ -3,7 +3,7 @@
     color: var(--cor-principal);
     background: var(--cor-terciaria);
     font-size: var(--tipografia-principal);
-    padding: .5rem 3rem; 
+    padding: .5rem 1.5rem; 
 }
 
 .header .navbar-brand.header-nav--name {
