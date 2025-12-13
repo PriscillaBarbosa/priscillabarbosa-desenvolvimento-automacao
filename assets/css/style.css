@@ -13,6 +13,7 @@
 @import url(_whatsapp-contato.css);
 @import url(_footer.css);
 
+
 * {
     padding: 0;
     margin: 0;
@@ -23,29 +24,9 @@ html {
   width: 100%;
 }
 
-.cormorant-garamond {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-
- @font-face {
-  
-  src: url("/assets/fonts/Aura.otf") format("opentype"),
-            url("/assets/fonts/Aura.ttf") format("opentype");
-            font-family: "Aura";
-  font-weight: 400;
-  font-style: normal; 
-  
-}
-
 @font-face {
-  src: url("/assets/fonts/Vermina.otf") format("opentype"),
-            url("/assets/fonts/Vermina.ttf") format("opentype");
-            font-family: "Vermina";
-  font-weight: 400;
-  font-style: normal; 
+  src: url("/assets/fonts/CinzelDecorative-Regular.ttf") format("truetype");
+  font-family: "Cinzel";
 }
 
 body {
@@ -61,12 +42,11 @@ main {
 
 .section-title {
   color: var(--cor-principal);
-  font-family: "Vermina", sans-serif;
-  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 3.75rem; 
-  letter-spacing: -0.09375rem;
+  font-size: clamp(1.5rem, 2vw, 2.5rem) !important;
 } 
 
 section {

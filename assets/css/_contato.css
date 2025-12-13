@@ -39,7 +39,7 @@
 .contato-redesSociais-titulo {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
-    font-size: 0.7rem;
+    font-size: clamp(.9rem, 2.5vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1rem; 
@@ -53,7 +53,7 @@
 .contato-redesSociais {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
+    font-size: clamp(.9rem, 2.5vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;

@@ -23,13 +23,13 @@
 .hero-title {
   margin-bottom: 1.5rem;
   flex-shrink: 0;
-  font-size: clamp(1rem, 2vw, 3rem);
-  font-family: "Cormorant Garamond", serif;
-  color: var(--cor-principal);
+  font-size: clamp(.9rem, 2.5vw, 1rem);
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-separador);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
-  letter-spacing: .08rem;
+  letter-spacing: .05rem;
   text-align: center;
   animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Mais rápido e suave */
     
@@ -38,7 +38,7 @@
 .hero-chamada {
   color: var(--cor-principal);
   font-family: "Montserrat", sans-serif;
-  font-size: .90rem;
+  font-size: clamp(.8rem, 1vw, 1.5rem);
   font-style: normal;
   font-weight: 400;
   line-height: 1.85rem;
@@ -71,12 +71,12 @@
 
 @media (max-width: 425px) {
   .img-self {
-    width: 60%;
+    width: 60% !important;
   }
 
-  span.Typewriter__wrapper {
+  /*span.Typewriter__wrapper {
     font-size: 1.8rem !important;
-  }
+  }*/
 }
 
 @media (max-width: 798px) {
@@ -84,9 +84,9 @@
     width: 70%;
   }
 
-  span.Typewriter__wrapper {
+  /*span.Typewriter__wrapper {
     font-size: 2rem !important;
-  }
+  }*/
 }
 
 @media (max-width: 1024px) {
@@ -94,18 +94,18 @@
     width: 80%;
   }
 
-  span.Typewriter__wrapper {
+  /*span.Typewriter__wrapper {
     font-size: 2rem !important;
-  }
+  }*/
 }
 
 @media (max-width: 1024px) {
   .img-self {
     width: 90%;
   }
-  span.Typewriter__wrapper {
+  /*span.Typewriter__wrapper {
     font-size: 2.5rem !important;
-  }
+  }*/
 }
 
 @-webkit-keyframes fade-in-left {

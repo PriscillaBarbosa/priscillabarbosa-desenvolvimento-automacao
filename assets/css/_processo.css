@@ -11,14 +11,11 @@
 
 .processo .section-title {
     color: var(--cor-principal);
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 4.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
-    line-height: 4.5rem; 
-    letter-spacing: -0.1125rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem) !important;
 }
 
 .processo-frase {
@@ -34,7 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
 }
@@ -69,13 +66,14 @@
 }
 
 .processo-titulo {
+    margin-top: 1rem;
     color: var(--cor-principal);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(.9rem, 2.5vw, 1rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 2.25rem; 
-    letter-spacing: -0.04688rem;
+    line-height: 1.85rem;
+    letter-spacing: 0.03rem;
 }
 
 .processo-texto {
