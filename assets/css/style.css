@@ -30,11 +30,22 @@ html {
   font-style: normal;
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+ @font-face {
+  
+  src: url("/assets/fonts/Aura.otf") format("opentype"),
+            url("/assets/fonts/Aura.ttf") format("opentype");
+            font-family: "Aura";
+  font-weight: 400;
+  font-style: normal; 
+  
+}
+
+@font-face {
+  src: url("/assets/fonts/Vermina.otf") format("opentype"),
+            url("/assets/fonts/Vermina.ttf") format("opentype");
+            font-family: "Vermina";
+  font-weight: 400;
+  font-style: normal; 
 }
 
 body {
@@ -50,7 +61,7 @@ main {
 
 .section-title {
   color: var(--cor-principal);
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Vermina", sans-serif;
   font-size: 2.8rem;
   font-style: normal;
   font-weight: 400;
