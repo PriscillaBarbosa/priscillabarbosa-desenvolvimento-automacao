@@ -169,7 +169,7 @@
     font-family:  "Montserrat", sans-serif;
     text-transform: lowercase !important;
     flex-shrink: 0;
-    font-size: clamp(.9rem, 2.5vw, 1rem);
+    font-size: clamp(.8rem, 2.5vw, .9rem);
     font-style: normal;
     font-weight: 500;
     line-height: 1.1;
