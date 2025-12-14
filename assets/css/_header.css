@@ -40,7 +40,7 @@
 
 .navbar .nav-link.nav--buttons {
     padding: 0.5rem 1rem;
-    font-size: clamp(.9rem, 2.5vw, 1rem);
+    font-size: clamp(.8rem, 2.5vw, .9rem);
     color: var(--cor-principal);
     background-color: transparent;
     font-family: "Montserrat", sans-serif;
