@@ -4,7 +4,9 @@
     --cor-principal: #171717;
     --cor-pretoSecundario: #161616;
     --cor-secundaria: #717182;
-    --cor-separador: #D4756F;
+    /*--cor-separador: #D4756F;*/
+    --cor-separador: #710014;
+    
     --cor-terciaria: #f1f1f1;
     --cor-bg: linear-gradient(180deg, #ffffff, #d3bcac, #ffffff);
 }
@@ -12,6 +14,6 @@
 [data-theme="dark"] {
     --cor-principal:  #f1f1f1;
     --cor-terciaria: #171717;
-    --cor-separador: #D4756F;
-    --cor-secundaria: #717182;
+    --cor-separador: #B38F6F;
+    --cor-secundaria: #8f8f8f;
 }
