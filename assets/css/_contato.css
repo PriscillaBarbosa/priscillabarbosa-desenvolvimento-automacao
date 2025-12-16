@@ -115,7 +115,7 @@ textarea .form-control {
 }
 
 .redesSociais-icones div i {
-    color: var(--cor-principal);
+    color: var(--cor-separador);
 }
 
 .form-control {
@@ -133,4 +133,9 @@ textarea .form-control {
 .btn-whatsapp {
     color: var(--cor-separador);
     font-size: 1.5rem;
+}
+
+.redesSociais-borda a {
+    text-decoration: none;
+    color: var( --cor-separador);
 }
