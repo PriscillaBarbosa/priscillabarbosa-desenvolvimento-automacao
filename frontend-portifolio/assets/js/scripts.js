@@ -1,3 +1,4 @@
+import '../css/styles.scss';
 import { inicializarDarkMode } from "./modules/darkMode.js";
 import { inicializarFormularioContato } from "./modules/inicializarFormulario.js";
 import { inicializarWhatsappBot } from "./modules/whatsappBot.js";

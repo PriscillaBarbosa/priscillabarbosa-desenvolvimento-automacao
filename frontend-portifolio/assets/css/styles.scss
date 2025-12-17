@@ -1,0 +1,131 @@
+// src/scss/styles.scss
+
+// 1. Configurações obrigatórias (sempre mantenha estas)
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark"; // Se usar modo escuro
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// 2. O Básico (Reset e Tipografia)
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+
+// 3. Layout (Grid e Containers)
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+
+// 4. Componentes (AQUI É ONDE VOCÊ ECONOMIZA)
+// Comente ou apague o que você NÃO usa no site:
+
+@import "bootstrap/scss/buttons";   // Botões .btn
+@import "bootstrap/scss/nav";       // Navegação base
+@import "bootstrap/scss/navbar";    // A barra de topo
+@import "bootstrap/scss/card";      // Cards
+@import "bootstrap/scss/forms";     // Formulários
+@import "bootstrap/scss/transitions"; // Animações de fade/collapse
+@import "bootstrap/scss/modal";  // Exemplo: Se não usa modal, deixe comentado
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/carousel";
+
+// 5. Utilitários (Classes como .m-5, .d-flex, .text-center)
+@import "bootstrap/scss/utilities/api";
+
+
+@import "_variaveis";
+@import "_header";
+@import "_footer";
+@import "_habilidades";
+@import "_header";
+@import "_hero";
+@import "_paraVoce";
+@import "_portifolio";
+@import "_processo";
+@import "_sobre";
+@import "_contato";
+@import "_faq";
+@import "_servicos";
+@import "_whatsapp-contato";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+  src: url("/assets/fonts/CinzelDecorative-Regular.ttf") format("truetype");
+  font-family: "Cinzel";
+}
+
+html, body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--cor-terciaria);
+}
+
+main {
+  padding: 0 6rem;
+}
+
+.section-title {
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 1.8vw, 2rem) !important;
+} 
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.form-floating > label {
+  color: var(--cor-principal);
+  opacity: .5;
+}
+
+.form-floating .form-control {
+  color: var(--cor-principal);
+}
