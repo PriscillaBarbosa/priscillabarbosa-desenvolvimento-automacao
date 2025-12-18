@@ -9,12 +9,14 @@ export function inicializarWhatsappBot() {
     const chatWindow = document.getElementById('wa-window');
 
     // Botões de opção
-    const btnRecrutador = document.getElementById('opt-recrutador');
     const btnProjeto = document.getElementById('opt-projeto');
     const btnNetwork = document.getElementById('opt-network');
+    const btnRecrutador = document.getElementById('opt-recrutador');
 
     // Se os elementos não existirem na página, para a execução (Segurança)
     if (!floatBtn) return;
+
+    floatBtn.classList.add('ativo');
 
     // 2. Função para Abrir/Fechar o Chat
     function toggleChat() {

@@ -5,9 +5,12 @@ import { inicializarWhatsappBot } from "./modules/whatsappBot.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     inicializarDarkMode();
-    inicializarWhatsappBot();
     inicializarFormularioContato();
     console.log('DOM carregado, Dark Mode inicializado.');
+
+    setTimeout(() => {
+        inicializarWhatsappBot();
+    }, 4000);
    
     AOS.init({
         duration: 1000

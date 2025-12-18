@@ -94,3 +94,14 @@
     color: white;
     border: none;
 }
+
+#wa-float-btn {
+  opacity: 0;
+  visibility: hidden; //começa invisivel
+  transition: opacity 0.5s ease, transform 0.3s ease; // Animação suave
+}
+
+#wa-float-btn.ativo {
+  opacity: 1;
+  visibility: visible;
+}

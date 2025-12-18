@@ -59,8 +59,9 @@
 
 
 @font-face {
-  src: url("/assets/fonts/CinzelDecorative-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/CinzelDecorative-Regular.woff2") format("woff2");
   font-family: "Cinzel";
+  font-display: swap;
 }
 
 html, body {
