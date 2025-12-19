@@ -59,6 +59,10 @@
   }
 }
 
+.hero-image {
+  box-shadow: var(--cor-sombra2);
+}
+
 .img-self {
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -68,10 +72,10 @@
   animation: fade-in-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 
-  /*mix-blend-mode: multiply;
+  mix-blend-mode: multiply;
   -webkit-mask-image: radial-gradient(circle, black 50%, transparent 95%);
   mask-image: radial-gradient(circle, black 50%, transparent 95%);
-  object-fit: cover;*/
+  object-fit: cover;
 }
 
 @media (max-width: 425px) {
