@@ -8,3 +8,12 @@
     letter-spacing: 0.02188rem;
     padding-bottom: 1rem;
 }
+
+.card-decor__list {
+    width: 45%;
+    height: auto;
+    background-color: var(--cor-bg);
+    border: 1px solid transparent;
+    box-shadow: var(--cor-sombra2);
+    border-radius: 0px 30px;
+}

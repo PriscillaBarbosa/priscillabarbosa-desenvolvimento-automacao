@@ -6,6 +6,11 @@
     /*--cor-separador: #D4756F;*/
     --cor-separador: #8a1218;
     --cor-terciaria: #f1f1f1;
+    --cor-bg: #f1efef;
+    --cor-sombra:  rgba(17, 17, 26, 0.1) 0px 1px 0px, 
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+    rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    --cor-sombra2: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 [data-theme="dark"] {
@@ -13,4 +18,9 @@
     --cor-terciaria: #171717;
     --cor-separador: #D4AE64;
     --cor-secundaria: #8f8f8f;
+    --cor-bg: #161616;
+    --cor-sombra: rgba(0, 0, 0, 0.4) 0px 1px 0px, 
+            rgba(0, 0, 0, 0.4) 0px 8px 24px, 
+            rgba(0, 0, 0, 0.4) 0px 16px 48px;
+    --cor-sombra2: rgba(0, 0, 0, 0.6) 0px 10px 10px -10px;
 }
