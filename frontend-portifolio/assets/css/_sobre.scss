@@ -23,7 +23,7 @@
     padding: 0;
     white-space: nowrap; 
     font-family: "Cinzel";
-    color:var(--cor-principal);
+    color: var(--cor-separador);
 }
 
 @media (min-width: 1500px) {
@@ -34,7 +34,7 @@
 }
 
 .sobre-destaque {
-   font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: .95rem;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +46,7 @@
 .sobre-diferenciais,
 .title-diferenciais {
     color:  var(--cor-principal);
-   font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.8rem, 1vw, .9rem);
     font-style: normal;
     font-weight: 400;

@@ -1,7 +1,6 @@
 .hero {
-  max-width: 100%;
+  width: 100%;
   padding-bottom: 0;
-  /*background: radial-gradient(circle at 80% 70%, #1f1f1f 3%, #dcdcdc 100%);*/
 }
 
 .separador,
@@ -167,7 +166,7 @@
 
 .botao-iniciar:hover {
   background: var(--cor-separador);
-  color: var(--cor-principal);
+  color: var(--cor-terciaria);
   border: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -178,4 +177,4 @@
 
 .badge img.img-badges {
   width: 4.5rem;
-}
+} 
