@@ -12,7 +12,7 @@ O projeto passou recentemente por uma refatoração para **Vite + SASS**, garant
 
 👉 **Acesse online:** [https://priscillabarbosa.com.br](https://priscillabarbosa-desenvolvimento-au.vercel.app)
 
-![Demo da página](assets/img/demo1.gif)
+![Demo da página](./docs/demo1.gif)
 
 | Componente | Link |
 | :--- | :--- |
