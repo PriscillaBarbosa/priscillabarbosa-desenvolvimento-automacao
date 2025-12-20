@@ -3,6 +3,10 @@
     align-items: flex-start;
     flex-shrink: 0;
     max-width: 100%;
+
+    @media(max-width: 425px) {
+        padding-bottom: 0;
+    }
 }
 
 .sobre .section-title {
@@ -16,6 +20,10 @@
     border: 1px solid transparent;
     box-shadow: var(--cor-sombra);
     border-radius: 5px;
+}
+
+.sobre-content .card-decor {
+    width: 100%;
 }
 
 .section-title {
@@ -152,7 +160,6 @@
 .sobre-especialidades {
     border-top: 1px solid;
     border-top-color: var(--cor-separador);
- 
 }
 
 /*.title-diferenciais {

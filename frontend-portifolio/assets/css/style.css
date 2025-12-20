@@ -45,7 +45,7 @@ main {
   font-style: normal;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: clamp(1.2rem, 1.8vw, 2rem) !important;
+  font-size: clamp(1.2rem, 1.6vw, 1.8rem) !important;
 } 
 
 section {

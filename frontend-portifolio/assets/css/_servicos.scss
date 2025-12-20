@@ -23,6 +23,10 @@
     gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
+
+    @media(max-width: 425px) {
+        margin-bottom: 0.5rem !important;
+    }
 }
 
 .icon {
@@ -84,6 +88,10 @@ li::marker {
     gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
+
+    @media (max-width: 425px) {
+        margin-top: 1rem;
+    }
 }
 
 .performance {
@@ -104,6 +112,10 @@ li::marker {
     gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
+
+    @media (max-width: 425px) {
+        margin-top: 2rem;
+    }
 }
 
 ul li p {
