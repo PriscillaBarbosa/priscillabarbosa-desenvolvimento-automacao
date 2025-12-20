@@ -58,11 +58,11 @@ export function inicializarWhatsappBot() {
         let texto = "";
 
         if (tipo === 'recrutador') {
-            texto = "Olá Priscilla! Sou recrutador e vi seu portfólio. Gostaria de falar sobre uma vaga.";
-        } else if (tipo === 'projeto') {
             texto = "Olá Priscilla! Gostaria de fazer um orçamento para um projeto de desenvolvimento.";
+        } else if (tipo === 'projeto') {
+            texto = "Olá Priscilla! Vim pelo seu portfólio e gostaria de fazer networking.";
         } else {
-           texto = "Olá Priscilla! Vim pelo seu portfólio e gostaria de fazer networking.";
+           texto = "Olá Priscilla! Sou recrutador e vi seu portfólio. Gostaria de falar sobre uma vaga.";
         }
 
         const textoCodificado = encodeURIComponent(texto);
