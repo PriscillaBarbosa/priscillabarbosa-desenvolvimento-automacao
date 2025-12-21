@@ -1,3 +1,4 @@
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../css/styles.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

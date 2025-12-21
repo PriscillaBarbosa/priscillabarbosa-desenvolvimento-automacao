@@ -124,4 +124,8 @@ ul li p {
 
 .solucoes-lista li p {
     color: var(--cor-secundaria);
+
+    @media (max-width: 425px) {
+        padding-bottom: .5rem;
+    }
 }

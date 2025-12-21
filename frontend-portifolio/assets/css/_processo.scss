@@ -96,7 +96,7 @@
 .processo-texto {
     color: var(--cor-principal);
     font-family: Montserrat;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 1vw, .9rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.42188rem; 

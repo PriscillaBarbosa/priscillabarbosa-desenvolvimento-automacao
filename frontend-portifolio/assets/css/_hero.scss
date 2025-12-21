@@ -1,7 +1,3 @@
-.hero {
-  width: 100%;
-  padding-bottom: 0;
-}
 
 .separador,
 .separador-sobre {
@@ -9,7 +5,6 @@
   height: .06rem;
   flex-shrink: 0;
   background: var(--cor-separador);
-  /*opacity:0.3; */
 }
 
 .separador-sobre {
@@ -31,13 +26,12 @@
   line-height: 1.1;
   letter-spacing: .02rem;
   text-align: center;
-  //animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Mais rápido e suave */
-    
 }
 
 .subtitle {
   letter-spacing: .02rem;
   line-height: 1.1;
+  min-height: 1.5em
 }
 
 .hero-chamada {
@@ -64,62 +58,28 @@
   }
 }
 
-/*.hero-image {
-  box-shadow: var(--cor-sombra2);
-}*/
-
-.img-self {
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  animation: fade-in-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-
-  mix-blend-mode: multiply;
-  -webkit-mask-image: radial-gradient(circle, black 50%, transparent 95%);
-  mask-image: radial-gradient(circle, black 50%, transparent 95%);
-  object-fit: cover;
-}
-
 @media (max-width: 425px) {
   .img-self {
     width: 60% !important;
   }
-
-  /*span.Typewriter__wrapper {
-    font-size: 1.8rem !important;
-  }*/
 }
 
 @media (max-width: 798px) {
   .img-self {
     width: 70%;
   }
-
-  /*span.Typewriter__wrapper {
-    font-size: 2rem !important;
-  }*/
 }
 
 @media (max-width: 1024px) {
   .img-self {
     width: 80%;
   }
-
-  /*span.Typewriter__wrapper {
-    font-size: 2rem !important;
-  }*/
 }
 
 @media (max-width: 1024px) {
   .img-self {
     width: 90%;
   }
-  /*span.Typewriter__wrapper {
-    font-size: 2.5rem !important;
-  }*/
 }
 
 @-webkit-keyframes fade-in-left {
@@ -187,3 +147,85 @@
 .badge img.img-badges {
   width: 4.5rem;
 } 
+
+/* Ajuste para o container pai na Hero */
+.hero {
+  position: relative;
+  overflow: hidden; 
+  min-height: 600px;
+  height: 80vh; 
+  max-height: 900px;
+  background-color: var(--cor-bg); 
+}
+
+/* Wrapper da imagem (O container que segura a foto) */
+.hero-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: flex-start; 
+  z-index: 1; 
+  pointer-events: none;
+}
+
+.img-self-fixed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche o espaço sem distorcer */
+  /* Foco no centro superior da imagem */
+  object-position: center top;
+ /*máscara desfoque */
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+  
+  .hero .col-12 {
+    background-color: var(--cor-bg2); 
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    -webkit-backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
+  }
+
+  .hero-image-wrapper {
+    width: 100%; 
+    height: 60vh; 
+    position: relative; /* Volta ao fluxo normal */
+    left: auto;
+    top: auto;
+    z-index: 0;
+    order: -1; 
+    
+    .img-self-fixed {
+       object-position: center top;
+       -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+       mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    }
+  }
+  
+  /* Ajuste no container do HTML para o layout mobile */
+  .hero .container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  /* Remove o offset e muda a largura da coluna de texto no mobile */
+  .hero .row .col-lg-6 {
+      margin-left: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
