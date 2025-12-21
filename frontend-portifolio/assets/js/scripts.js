@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             typewriter
-                .typeString('Presença digital que vende 24/7')
+                .typeString('Presença digital que valoriza sua marca.')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Economia de 10-20h por semana')
+                .typeString('Tempo para focar no estratégico.')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Rotinas automatizadas')
+                .typeString('Fluxos de trabalho organizados.')
                 .pauseFor(1000)
                 .start();
         }
