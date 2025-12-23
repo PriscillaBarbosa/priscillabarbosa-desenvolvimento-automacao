@@ -1,5 +1,4 @@
 
-
 export function inicializarWhatsappBot() {
     console.log("Iniciando módulo do Whatsapp...");
 
@@ -16,7 +15,7 @@ export function inicializarWhatsappBot() {
     // Se os elementos não existirem na página, para a execução (Segurança)
     if (!floatBtn) return;
 
-    floatBtn.classList.add('ativo');
+    // floatBtn.classList.add('ativo'); // (Opcional: descomente se seu CSS precisar dessa classe para mostrar o botão)
 
     // 2. Função para Abrir/Fechar o Chat
     function toggleChat() {
@@ -31,25 +30,19 @@ export function inicializarWhatsappBot() {
     floatBtn.addEventListener('click', toggleChat);
     closeBtn.addEventListener('click', toggleChat);
     
-   // 4. Lógica do envio (Versão Anti-CORS / Simple Request)
+   // 4. Lógica do envio
     function sendToWhatsapp(tipo) {
-
-        // Prepara os dados
-        const dados = {
-            tipo: tipo,
-            data: new Date().toISOString()
-        };
-
-        // --- Lógica original do WhatsApp ---
-        const numeroTelefone = "5531989882748";
+        // O número deve ser apenas dígitos (sem + ou -)
+        const numeroTelefone = "5531989882748"; 
         let texto = "";
 
+            // Agora as mensagens contêm a Palavra-Chave do Typebot
         if (tipo === 'recrutador') {
             // Palavra-chave: Recrutamento
-            texto = "Olá Priscilla! Sou recrutador(a) e vi seu portfólio. Gostaria de falar sobre uma oportunidade/ Recrutamento.";
+            texto = "Olá Priscilla! Sou recrutador e vi seu portfólio. Gostaria de falar sobre uma oportunidade de Recrutamento.";
         } else if (tipo === 'projeto') {
             // Palavra-chave: Projeto
-            texto = "Olá Priscilla! Gostaria de fazer um orçamento para um Projeto.";
+            texto = "Olá Priscilla! Gostaria de fazer um orçamento para um Projeto de desenvolvimento.";
         } else {
             // Palavra-chave: Networking
             texto = "Olá Priscilla! Vim pelo seu portfólio e gostaria de fazer Networking.";
@@ -63,8 +56,9 @@ export function inicializarWhatsappBot() {
         }, 300);
     }
 
-    //5. Vincula cada função ao botão de envio
-    btnRecrutador.addEventListener('click', () => sendToWhatsapp('recrutador'));
-    btnProjeto.addEventListener('click', () => sendToWhatsapp('projeto'));
-    btnNetwork.addEventListener('click', () => sendToWhatsapp('network'));
+    // 5. Vincula cada função ao botão de envio
+    // Nota: Verifique se o ID 'opt-network' no HTML bate com o envio 'network' aqui
+    if(btnRecrutador) btnRecrutador.addEventListener('click', () => sendToWhatsapp('recrutador'));
+    if(btnProjeto) btnProjeto.addEventListener('click', () => sendToWhatsapp('projeto'));
+    if(btnNetwork) btnNetwork.addEventListener('click', () => sendToWhatsapp('network'));
 }
