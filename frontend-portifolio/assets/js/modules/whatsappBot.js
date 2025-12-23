@@ -1,4 +1,4 @@
-//const N8N_WEBHOOK_URL = "https://n8n-portfolio-xis4.onrender.com/webhook/lead-portfolio";
+
 
 export function inicializarWhatsappBot() {
     console.log("Iniciando módulo do Whatsapp...");
@@ -40,29 +40,19 @@ export function inicializarWhatsappBot() {
             data: new Date().toISOString()
         };
 
-        // ENVIAR COMO TEXTO PURO (Isso pula a verificação de CORS do navegador)
-      /*  fetch(N8N_WEBHOOK_URL, {
-            method: "POST",
-            // O segredo está aqui: dizemos que é texto, mas mandamos o JSON convertido em string
-            headers: { "Content-Type": "text/plain;charset=utf-8" }, 
-            body: JSON.stringify(dados)
-        }).then(() => {
-            console.log("Enviado para n8n com sucesso (modo texto)");
-        }).catch(err => {
-            // Mesmo com erro, não travamos o usuário
-            console.warn("Aviso n8n:", err);
-        });*/
-
         // --- Lógica original do WhatsApp ---
         const numeroTelefone = "5531989882748";
         let texto = "";
 
         if (tipo === 'recrutador') {
-            texto = "Olá Priscilla! Gostaria de fazer um orçamento para um projeto de desenvolvimento.";
+            // Palavra-chave: Recrutamento
+            texto = "Olá Priscilla! Sou recrutador(a) e vi seu portfólio. Gostaria de falar sobre uma oportunidade/ Recrutamento.";
         } else if (tipo === 'projeto') {
-            texto = "Olá Priscilla! Vim pelo seu portfólio e gostaria de fazer networking.";
+            // Palavra-chave: Projeto
+            texto = "Olá Priscilla! Gostaria de fazer um orçamento para um Projeto.";
         } else {
-           texto = "Olá Priscilla! Sou recrutador e vi seu portfólio. Gostaria de falar sobre uma vaga.";
+            // Palavra-chave: Networking
+            texto = "Olá Priscilla! Vim pelo seu portfólio e gostaria de fazer Networking.";
         }
 
         const textoCodificado = encodeURIComponent(texto);
