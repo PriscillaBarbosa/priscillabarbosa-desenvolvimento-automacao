@@ -15,7 +15,7 @@ export function inicializarWhatsappBot() {
     // Se os elementos não existirem na página, para a execução (Segurança)
     if (!floatBtn) return;
 
-    // floatBtn.classList.add('ativo'); // (Opcional: descomente se seu CSS precisar dessa classe para mostrar o botão)
+    floatBtn.classList.add('ativo'); // (Opcional: descomente se seu CSS precisar dessa classe para mostrar o botão)
 
     // 2. Função para Abrir/Fechar o Chat
     function toggleChat() {
