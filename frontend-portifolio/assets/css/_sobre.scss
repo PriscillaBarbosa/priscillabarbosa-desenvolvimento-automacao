@@ -39,7 +39,7 @@
     font-style: normal;
     padding: 0;
     white-space: nowrap; 
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: var(--cor-separador);
 }
 
@@ -160,16 +160,6 @@
     border-top: 1px solid;
     border-top-color: var(--cor-separador);
 }
-
-/*.title-diferenciais {
-    font-family:  "Montserrat", sans-serif;
-    font-size: .8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.42188rem;
-    letter-spacing: 0.02188rem;
-    color:var(--cor-principal);
-}*/
 
 .cards-especialidades li {
     list-style-type: none;
