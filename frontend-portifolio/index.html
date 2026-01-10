@@ -34,8 +34,8 @@
     <script type="module" src="./assets/js/scripts.js" defer></script>
 </head>
 <body class="p-0 m-0"> 
-    <header class="header">
-        <nav class="navbar navbar-expand-xl" aria-label="Navegação principal">
+    <header class="header" role="banner">
+        <nav class="navbar navbar-expand-xl" aria-label="Navegação principal" role="navigation">
             <div class="container">
                 <div class="d-flex flex-column">
                     <a class="navbar-brand header-nav--name d-flex" href="#">
@@ -106,7 +106,7 @@
                                 <div class="icon p-2 justify-content-start align-items-center d-flex">
                                     <i class="fa-regular fa-star icon-servicos"></i>
                                 </div>
-                                <h4 class="servicos-subTitle pt-2 mt-0">Diferenciais</h4>
+                                <h2 class="servicos-subTitle pt-2 mt-0">Diferenciais</h2>
                             </div>
                                 <ul>
                                     <li>
@@ -131,7 +131,7 @@
                                     <div class="icon p-2 justify-content-start align-items-center d-flex">
                                         <i class="fa-regular fa-star icon-servicos"></i>
                                     </div>
-                                    <h4 class="servicos-subTitle pt-2 mt-0">Minhas Habilidades</h4>
+                                    <h2 class="servicos-subTitle pt-2 mt-0">Minhas Habilidades</h2>
                                 </div>
                                 <div class="subsecao-especialidades pt-1 pb-0">
                                     <p class="d-flex justify-content-center my-2">DESENVOLVIMENTO WEB</p>
@@ -399,22 +399,35 @@
 
                             <div class="row g-5 align-items-center mb-5">
                                 <div class="col-md-7">
-                                    <img src="./assets/img/img-3.webp" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300" loading="lazy">
+                                   <!-- <img src="./assets/img/img-3.webp" alt="imagem do projeto" class="img-fluid" data-aos="zoom-in" data-aos-delay="300" loading="lazy"> -->
+                                   <video 
+                                    class="media-cover img-fluid" data-aos="zoom-in" data-aos-delay="300" loading="lazy"
+                                    preload="metadata"
+                                    autoplay 
+                                    muted 
+                                    loop 
+                                    playsinline 
+                                    poster="./assets/img/amorEterno.webp"
+                                    >
+                                    <source src="./assets/img/amorEterno.mp4" type="video/mp4" >
+                                    Seu navegador não suporta vídeos.
+                                    </video>
                                 </div>
                                 <div class="col-md-5">
                                     <div class="textos">
-                                        <p class="texto-tag">Micro SASS para controle de cornograma de Eventos</p>
-                                        <h3 class="texto-titulo">ESSenCe APP</h3>
-                                        <p class="texto-frase">Controle de cronograma de produção para eventos, datas de pagamentos de fornecedores, marcos do projeto com entregas significativas e ou eventos chave. Menos planilhas, mais controle, mais resultados.</p>
+                                        <p class="texto-tag">Landing Page para Cerimonial de Casamentos</p>
+                                        <h3 class="texto-titulo">Amor Eterno</h3>
+                                        <p class="texto-frase">Layout que une sofisticação e funcionalidade. A estrutura foi pensada para transmitir segurança e organização, guiando o visitante pelos serviços de forma intuitiva até o contato. Perfeito para destacar o portfólio e a expertise da marca.</p>
                                         <div class="container-tecs d-flex flex-wrap">
                                             <div><p class="tec mb-0 me-2">JavaScript ES6+</p></div>
                                             <div><p class="tec mb-0 me-2">Node.js</p></div>
                                             <div><p class="tec mb-0 me-2">CSS3</p></div>
+                                            <div><p class="tec mb-0 me-2">Bootstrap</p></div>
+                                            <div><p class="tec mb-0 me-2">Vite</p></div>
                                             <div><p class="tec mb-0 me-2">Google Sheets</p></div>
-                                            <div><p class="tec mb-0 me-2">Calendly</p></div>
                                             <div><p class="tec mb-0 me-2">Evolution API</p></div>
                                         </div>
-                                        <a href="#" class="tec-ver">Ver projeto -></a>
+                                        <a href="https://amor-eterno-zeta.vercel.app/" class="tec-ver">Ver projeto -></a>
                                         <a href="#contato" class="botao-ver mt-3 d-flex justify-content-center align-items-center mb-3">QUERO ISSO PARA O MEU NEGÓCIO!</a>
                                     </div>
                                 </div>
@@ -696,7 +709,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer"> <div class="container">
+    <footer class="footer" role="contentinfo"> <div class="container">
             <div class="row g-0">
                 <div class="col-12">
                     <div class="dados-footer d-flex flex-column justify-content-center align-items-center">
