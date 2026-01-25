@@ -1,191 +1,191 @@
-
 .sobre {
-    align-items: flex-start;
-    flex-shrink: 0;
-    max-width: 100%;
+  align-items: flex-start;
+  flex-shrink: 0;
+  max-width: 100%;
 
-    @media(max-width: 425px) {
-        padding-bottom: 0;
-    }
+  @media (max-width: 425px) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .sobre .section-title {
-    padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .card-decor {
-    width: 90%;
-    height: auto;
-    background-color: var(--cor-bg);
-    border: 1px solid transparent;
-    box-shadow: var(--cor-sombra);
-    border-radius: 5px;
+  width: 90%;
+  height: auto;
+  background-color: var(--cor-bg);
+  border: 1px solid transparent;
+  box-shadow: var(--cor-sombra);
+  border-radius: 5px;
 }
 
 .sobre-content .card-decor {
-    width: 100%;
+  width: 100%;
 }
 
 .section-title {
-    font-size: 2.8rem !important;
-    padding-bottom: .5rem;
+  font-size: 2.8rem !important;
+  padding-bottom: 0.5rem;
 }
 
 .section-title.sobre-titulo {
-    font-style: normal;
-    font-size: clamp(1.2rem, 1.6vw, 1.8rem);
-    line-height: 1.75rem;
-    letter-spacing: 0.0625rem;
-    font-style: normal;
-    padding: 0;
-    white-space: nowrap; 
-    font-family: "Montserrat", sans-serif;
-    color: var(--cor-separador);
+  font-style: normal;
+  font-size: clamp(1.2rem, 1.6vw, 1.8rem);
+  line-height: 1.75rem;
+  letter-spacing: 0.0625rem;
+  font-style: normal;
+  padding: 0;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-separador);
 }
 
 @media (min-width: 1500px) {
-    .sobre {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
+  .sobre {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .sobre-destaque {
-    font-family: "Montserrat", sans-serif;
-    font-size: .95rem;
-    font-style: normal;
-    line-height: 1.85rem;
-    letter-spacing: 0.03rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-style: normal;
+  line-height: 1.85rem;
+  letter-spacing: 0.03rem;
 }
 
 .sobre-texto,
 .sobre-diferenciais,
 .title-diferenciais {
-    color:  var(--cor-principal);
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(0.8rem, 1vw, .9rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75rem; 
-    letter-spacing: 0.02188rem;
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.02188rem;
 }
 
 .sobre-infoDados {
-    border-top: 1px solid var(--cor-separador);
-    border-bottom: 1px solid var(--cor-separador);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    gap: 1rem;
-    align-self: stretch;
-    flex-wrap: wrap;
-    justify-content: center;
+  border-top: 1px solid var(--cor-separador);
+  border-bottom: 1px solid var(--cor-separador);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sobre-dados {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-    text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  text-align: center;
 }
 
 .sobre-dados .numero {
-    color: var(--cor-principal);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.5rem; 
+  color: var(--cor-principal);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
 }
 
 .sobre-dados .texto {
-    color: var(--cor-principal);
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1rem;
-    letter-spacing: 0.0375rem;
-    text-transform: uppercase;
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0375rem;
+  text-transform: uppercase;
 }
 
 .especialidades,
 .subsecao-especialidades {
-    padding-top: 3rem;
-    padding-bottom:1rem;
-    color: var(--cor-principal);
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1rem; 
-    letter-spacing: 0.075rem;
-    text-transform: uppercase;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
 }
 
 .card {
-    display: flex;
-    width:auto;
-    height: 2.125rem;
-    padding: 0.5rem 1rem;
-    align-items: center; 
-    justify-content: center; 
-    flex-shrink: 0;
-    margin-right: 0.75rem;
-    background: var(--cor-principal);
-    border-radius: 40px;
-    -webkit-box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86); 
-    box-shadow: 1px 2px 17px -9px rgba(113, 113, 130, 0.86);
-    transition: all 0.3s ease; /* Adiciona transição para o hover */
+  display: flex;
+  width: auto;
+  height: 2.125rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 0.75rem;
+  background: var(--cor-principal);
+  border-radius: 40px;
+  -webkit-box-shadow: 1px 2px 17px -9px rgba(113, 113, 130, 0.86);
+  box-shadow: 1px 2px 17px -9px rgba(113, 113, 130, 0.86);
+  transition: all 0.3s ease; /* Adiciona transição para o hover */
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 20px -5px rgba(113, 113, 130, 0.9);
-    background: var(--cor-separador);
-    border: none;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px -5px rgba(113, 113, 130, 0.9);
+  background: var(--cor-separador);
+  border: none;
 }
 
 .card p {
-    color: var(--cor-terciaria);
-    font-family:  "Montserrat", sans-serif;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1rem; 
-    letter-spacing: 0.0375rem;
+  color: var(--cor-terciaria);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0375rem;
 }
 
 .sobre-especialidades {
-    border-top: 1px solid;
-    border-top-color: var(--cor-separador);
+  border-top: 1px solid;
+  border-top-color: var(--cor-separador);
 }
 
 .cards-especialidades li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .especialidade-subtitulo {
-    font-size: .5rem ;
+  font-size: 0.5rem;
 }
 
 .especialidades-tec {
-    color: var(--cor-separador);
-    font-family:  "Montserrat", sans-serif;
-    text-transform: lowercase !important;
-    flex-shrink: 0;
-    font-size: clamp(.8rem, 2.5vw, .9rem);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: .05rem;
-    text-align: center;
+  color: var(--cor-separador);
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase !important;
+  flex-shrink: 0;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.05rem;
+  text-align: center;
 
-    @media (max-width: 425px) {
-        margin-bottom: 0;
-    }
+  @media (max-width: 425px) {
+    margin-bottom: 0;
+  }
 }
 
 .especialidades-tec::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
